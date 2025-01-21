@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar Section -->
+        <nav>
+            <div class="logo">
+                <img src="img/Logo.jpg" alt="Your Logo" class="logo-img">
+            </div>
+            <button class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="competency.html">Competencies</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="intro-text">
+            <h1 class="pulse">Ian Gichachi</h1>
+            <p class="pulse">Software Developer</p>
+        </div>
+        <div class="intro-img">
+            <img src="img/Main pic.jpg" alt="Your Portrait">
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-me">
+        <video autoplay muted loop id="myVideo">
+            <source src="/img/Background video html.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="container">
+            <p>
+                Driven Full-Stack Web Developer with over 4 years of experience in crafting innovative, secure, and user-friendly software solutions. Expertise includes front-end and back-end development, network management, and operating systems, delivering high-impact projects that enhance user engagement and performance. Skilled in using Wix as a cloud-based website builder to create customized and professional portfolios for clients, achieving exceptional results in client job placement. Proficient in leveraging ChatGPT and designing advanced prompts to create highly effective job-seeking portfolios that have significantly improved client hiring success rates. Experienced in stakeholder collaboration and cross-functional communication to translate complex requirements into functional applications. Seeking to leverage proven technical and creative skills in a challenging remote role to drive organizational success.
+            </p>
+            <button onclick="window.location.href='about.html';">Learn More About Me</button>
+        </div>
+    </section>
+
+    <!-- Competencies Section -->
+    <section class="competencies">
+        <div class="container">
+            <h2>Here are some of my key strengths:</h2>
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">Full-Stack Development <span>+</span></button>
+                <div class="accordion-content">
+                    <p>I specialise in crafting secure and efficient applications, utilising both front-end and back-end technologies to deliver seamless user experiences. My expertise includes JavaScript frameworks and API integration, ensuring scalable and robust solutions for every project.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">Portfolio Development <span>+</span></button>
+                <div class="accordion-content">
+                    <p>As an expert in creating tailored job-seeking portfolios, I’ve designed over 70 professional profiles using tools like Wix and strategic ChatGPT prompts. These portfolios have resulted in measurable client success, including a 30% increase in remote job placements.</p>
+                </div>
+            </div>
+            <button class="see-more" onclick="window.location.href='competency.html';">See All Competencies</button>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="container">
+            <h2>Highlighted Projects</h2>
+            <div class="carousel">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide" onclick="location.href='project.html';">
+                            <img src="img/GHC Foundation.png" alt="GHC Foundation Website">
+                            <div class="title">
+                                <h3>GHC Foundation Website</h3>
+                            </div>
+                        </li>
+                        <li class="carousel-slide" onclick="location.href='project.html';">
+                            <img src="img/Careers Without Borders.png" alt="Careers Without Borders Official Website">
+                            <div class="title">
+                                <h3>Careers Without Borders Official Website</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-control left" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-control right" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>Telephone: +254720064950</p>
+                    <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+                </div>
+                <div class="footer-right">
+                    <p>Location: Nairobi, Kenya</p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank">Ian Gichachi</a></p>
+                </div>
+            </div>
+            <hr> <!-- Horizontal line for visual separation -->
+            <p class="copyright">&copy; Gichachi Ian Mwaura</p>
+            <hr> <!-- Horizontal line for visual separation -->
+        </div>
+    </footer>    
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top" title="Back to Top">
+        &#8679; <!-- Unicode up arrow icon -->
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
