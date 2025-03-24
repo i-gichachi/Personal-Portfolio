@@ -3,105 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Portfolio</title>
+    <title>Projects | Software Developer Portfolio</title>
+    <meta name="description" content="Professional projects portfolio of Ian Gichachi, showcasing full-stack development work and case studies">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- Navbar Section -->
-        <nav>
+    <!-- Video Background -->
+    <video autoplay muted loop id="videoBG" aria-hidden="true">
+        <source src="img/About video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Consistent Header with Index Page -->
+    <header aria-label="Main navigation">
+        <nav class="navbar">
             <div class="logo">
                 <a href="index.html">
-                    <img src="img/Logo.jpg" alt="Your Logo">
+                    <img src="img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50">
                 </a>
             </div>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="about.html">About</a></li>
                 <li><a href="competency.html">Competencies</a></li>
-                <li><a href="project.html" class="active">Projects</a></li>
-                <button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button>
+                <li><a href="project.html" aria-current="page">Projects</a></li>
+                <li><button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="projects">
+        <!-- Projects Section -->
+        <section class="projects-section">
             <div class="container">
-                <h1>Projects</h1>
-                <div class="project-card">
-                    <img src="img/GHC Foundation.png" alt="GHC Foundation Website">
-                    <div class="project-content">
-                        <h2>GHC Foundation Website</h2>
-                        <a href="https://www.theghcf.org/" target="_blank">Visit the Website</a>
-                        <h3>About</h3>
-                        <p>The Graced Hands of Compassion Foundation connects hearts across borders, uplifting vulnerable children, orphans, and the elderly in Kenya and the US. Through education, charity visits, and emotional support, they nurture hope and empower lives. Rooted in values aligned with Sustainable Development Goals, the foundation strives to end hunger and improve education. The website serves as a bridge, making it simple to donate, volunteer, and engage with their mission, fostering meaningful connections and positive change.</p>
-                        <h3>Languages/Tools Used</h3>
-                        <p>Frontend: HTML, CSS; Backend: Python; Payment Integration: PayPal API</p>
-                        <h3>UI/UX Highlights</h3>
-                        <ul>
-                            <li>Fully responsive design, ensuring a seamless user experience across all devices.</li>
-                            <li>Intuitive navigation and clear call-to-action elements to drive user engagement.</li>
-                            <li>Accessibility-focused design to cater to diverse users.</li>
-                        </ul>
-                        <h3>Impact</h3>
-                        <ul>
-                            <li>Achieved a 40% increase in user engagement post-launch.</li>
-                            <li>Streamlined online donation processes, enhancing user convenience and satisfaction.</li>
-                            <li>Boosted the organisation's digital presence, increasing community involvement and support.</li>
-                        </ul>
+                <h1 class="section-title">Project Case Studies</h1>
+                <p class="section-subtitle">Detailed overviews of my professional work and contributions</p>
+                
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h2 class="project-title">GHC Foundation Website</h2>
+                        <a href="https://www.theghcf.org/" target="_blank" class="project-link" rel="noopener noreferrer">
+                            <span>Live Demo</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 6H6V18H18V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 4H20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 3L12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
                     </div>
-                </div>
-                <div class="project-card">
-                    <img src="img/Careers Without Borders.png" alt="Careers Without Borders Official Website">
-                    <div class="project-content">
-                        <h2>Careers Without Borders Official Website</h2>
-                        <a href="https://www.prcresume.com/home" target="_blank">Visit the Website</a>
-                        <h3>About</h3>
-                        <p>The Careers Without Borders website is the official digital presence for a company dedicated to empowering professionals with exceptional resume services. The site provides an intuitive platform for users to explore offerings, learn about career resources, and engage seamlessly with the brand. Designed to enhance user experience and elevate the company's brand identity, the website reflects a commitment to quality, reliability, and innovation in career development.</p>
-                        <h3>Languages/Tools Used</h3>
-                        <p>Frontend: HTML, CSS; Backend: Python; Hosting: Vercel</p>
-                        <h3>UI/UX Highlights</h3>
-                        <ul>
-                            <li>Responsive design optimised for all devices, delivering a consistent and professional appearance.</li>
-                            <li>Clean and intuitive interface, prioritising ease of navigation and accessibility.</li>
-                            <li>Strategic call-to-action elements to drive engagement and conversion.</li>
-                        </ul>
-                        <h3>Impact</h3>
-                        <ul>
-                            <li>Launched the website to enhance brand identity and improve user experience.</li>
-                            <li>Updated and secured systems to optimise performance and ensure data integrity, reducing downtime by 25%.</li>
-                            <li>Strengthened the organisation’s digital presence, driving greater customer trust and engagement.</li>
-                        </ul>
+                    
+                    <div class="project-image-container">
+                        <img src="img/GHC Foundation.png" alt="GHC Foundation Website Screenshot" class="project-image" loading="lazy">
                     </div>
-                </div>
+                    
+                    <div class="project-content">
+                        <div class="project-overview">
+                            <h3 class="content-title">Project Overview</h3>
+                            <p>The Graced Hands of Compassion Foundation connects hearts across borders, uplifting vulnerable children, orphans, and the elderly in Kenya and the US. Through education, charity visits, and emotional support, they nurture hope and empower lives. Rooted in values aligned with Sustainable Development Goals, the foundation strives to end hunger and improve education. The website serves as a bridge, making it simple to donate, volunteer, and engage with their mission, fostering meaningful connections and positive change.</p>
+                        </div>
+                        
+                        <div class="project-details">
+                            <div class="detail-card">
+                                <h3 class="detail-title">Technologies Used</h3>
+                                <ul class="tech-list">
+                                    <li><span class="tech-pill">HTML5</span></li>
+                                    <li><span class="tech-pill">CSS3</span></li>
+                                    <li><span class="tech-pill">Python</span></li>
+                                    <li><span class="tech-pill">PayPal API</span></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-card">
+                                <h3 class="detail-title">Key Features</h3>
+                                <ul class="feature-list">
+                                    <li>Fully responsive design, ensuring a seamless user experience across all devices</li>
+                                    <li>Intuitive navigation and clear call-to-action elements to drive user engagement</li>
+                                    <li>Accessibility-focused design to cater to diverse users</li>
+                                    <li>Secure payment integration for donations</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-card">
+                                <h3 class="detail-title">Impact & Results</h3>
+                                <ul class="impact-list">
+                                    <li>Achieved a 40% increase in user engagement post-launch</li>
+                                    <li>Streamlined online donation processes, enhancing user convenience and satisfaction</li>
+                                    <li>Boosted the organisation's digital presence, increasing community involvement and support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h2 class="project-title">Careers Without Borders Official Website</h2>
+                        <a href="https://www.prcresume.com/home" target="_blank" class="project-link" rel="noopener noreferrer">
+                            <span>Live Demo</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 6H6V18H18V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 4H20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 3L12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="project-image-container">
+                        <img src="img/Careers Without Borders.png" alt="Careers Without Borders Website Screenshot" class="project-image" loading="lazy">
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-overview">
+                            <h3 class="content-title">Project Overview</h3>
+                            <p>The Careers Without Borders website is the official digital presence for a company dedicated to empowering professionals with exceptional resume services. The site provides an intuitive platform for users to explore offerings, learn about career resources, and engage seamlessly with the brand. Designed to enhance user experience and elevate the company's brand identity, the website reflects a commitment to quality, reliability, and innovation in career development.</p>
+                        </div>
+                        
+                        <div class="project-details">
+                            <div class="detail-card">
+                                <h3 class="detail-title">Technologies Used</h3>
+                                <ul class="tech-list">
+                                    <li><span class="tech-pill">HTML5</span></li>
+                                    <li><span class="tech-pill">CSS3</span></li>
+                                    <li><span class="tech-pill">Python</span></li>
+                                    <li><span class="tech-pill">Vercel</span></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-card">
+                                <h3 class="detail-title">Key Features</h3>
+                                <ul class="feature-list">
+                                    <li>Responsive design optimised for all devices, delivering a consistent and professional appearance</li>
+                                    <li>Clean and intuitive interface, prioritising ease of navigation and accessibility</li>
+                                    <li>Strategic call-to-action elements to drive engagement and conversion</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-card">
+                                <h3 class="detail-title">Impact & Results</h3>
+                                <ul class="impact-list">
+                                    <li>Launched the website to enhance brand identity and improve user experience</li>
+                                    <li>Updated and secured systems to optimise performance and ensure data integrity, reducing downtime by 25%</li>
+                                    <li>Strengthened the organisation's digital presence, driving greater customer trust and engagement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
 
-    <!--Footer-->
-    <footer class="footer">
+    <!-- Consistent Footer with Index Page -->
+    <footer class="footer" aria-label="Contact information">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <p>Telephone: +254720064950</p>
-                    <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact</h3>
+                    <address>
+                        <p>Telephone: <a href="tel:+254720064950">+254720064950</a></p>
+                        <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+                    </address>
                 </div>
-                <div class="footer-right">
-                    <p>Location: Nairobi, Kenya</p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank">Ian Gichachi</a></p>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Location</h3>
+                    <p>Nairobi, Kenya</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Connect</h3>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
                 </div>
             </div>
-            <hr> <!-- Horizontal line for visual separation -->
-            <p class="copyright">&copy; Gichachi Ian Mwaura</p>
-            <hr> <!-- Horizontal line for visual separation -->
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All rights reserved.</p>
+            </div>
         </div>
-    </footer>  
+    </footer>
 
     <!-- Back to Top Button -->
-    <div id="back-to-top" title="Back to Top">
-        &#8679; <!-- Unicode up arrow icon -->
-    </div>
-    
+    <button id="back-to-top" aria-label="Back to top" title="Back to Top">
+        &#8679;
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>

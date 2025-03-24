@@ -1,160 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Portfolio</title>
-    <link rel="stylesheet" href="about.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me | Software Developer Portfolio</title>
+        <meta name="description" content="Professional background and experience of Ian Gichachi, Full-Stack Developer">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="about.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    
 <body>
-
-    <video autoplay muted loop id="videoBG">
-        <source src="/img/About video.mp4" type="video/mp4">
+    <!-- Video Background -->
+    <video autoplay muted loop id="videoBG" aria-hidden="true">
+        <source src="img/About video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
-    <header>
-        <!-- Navbar Section -->
-        <nav>
+    <!-- Consistent Header with Index Page -->
+    <header aria-label="Main navigation">
+        <nav class="navbar">
             <div class="logo">
                 <a href="index.html">
-                    <img src="img/Logo.jpg" alt="Your Logo">
+                    <img src="img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50">
                 </a>
             </div>
-            <button class="menu-toggle" id="mobile-menu">
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
             <ul class="nav-links">
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
                 <li><a href="competency.html">Competencies</a></li>
                 <li><a href="project.html">Projects</a></li>
-                <button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button>
+                <li><button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Work Experience Section -->
         <section class="experience">
-            <div class="container">
-                <h1>Professional Experience</h1>
-                <!-- Each job role with toggle details -->
-                <div class="job">
-                    <h2>Senior Portfolio Developer - Careers Without Borders <span>(Remote, Oct 2024 - Present)</span>
-                        <button class="expand-button" onclick="toggleDetails(this)">+</button>
-                    </h2>
-                    <div class="job-details">
-                        <h3>Roles and Responsibilities:</h3>
+            <h1>Work Experience</h1>
+            
+            <!-- Senior Portfolio Developer -->
+            <div class="job">
+                <div class="job-header">
+                    <h2>Senior Portfolio Developer - Careers Without Borders</h2>
+                    <span class="job-period">Remote, Oct 2024 - Present</span>
+                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
+                </div>
+                <div class="job-details">
+                    <h3>Key Responsibilities:</h3>
+                    <ul>
+                        <li>Spearheaded the portfolio department, introducing innovative processes.</li>
+                        <li>Designed and delivered over 40 international and domestic portfolios.</li>
+                        <li>Fostered collaboration among cross-functional teams.</li>
+                    </ul>
+                    <div class="more-responsibilities">
+                        <h3>Additional Responsibilities:</h3>
                         <ul>
-                            <li>Spearheaded the portfolio department, introducing innovative processes.</li>
-                            <li>Designed and delivered over 20 international and domestic portfolios.</li>
-                            <li>Fostered collaboration among cross-functional teams.</li>
-                            <!-- More responsibilities that can be toggled -->
-                            <div class="more-responsibilities">
-                                <li>Achieved high client satisfaction, with multiple clients securing their dream remote jobs and referencing new business opportunities, increasing service demand by 25%.</li>
-                                <li>Enhanced team productivity by implementing workflow optimization strategies, leading to a 20% reduction in turnaround time for portfolio completion.</li>
-                            </div>
+                            <li>Achieved high client satisfaction, with multiple clients securing their dream remote jobs and referencing new business opportunities, increasing service demand by 25%.</li>
+                            <li>Enhanced team productivity by implementing workflow optimization strategies, leading to a 20% reduction in turnaround time for portfolio completion.</li>
                         </ul>
                     </div>
                 </div>
-                <!-- Portfolio & Software Developer -->
-                <div class="job">
-                    <h2>Portfolio & Software Developer - Pro Resume Crafters <span>(Remote, Nov 2023 - Sep 2024)</span>
-                        <button class="expand-button" onclick="toggleDetails(this)">+</button>
-                    </h2>
-                    <div class="job-details">
-                        <h3>Roles and Responsibilities:</h3>
+            </div>
+            
+            <!-- Portfolio & Software Developer -->
+            <div class="job">
+                <div class="job-header">
+                    <h2>Portfolio & Software Developer - Pro Resume Crafters</h2>
+                    <span class="job-period">Remote, Nov 2023 - Sep 2024</span>
+                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
+                </div>
+                <div class="job-details">
+                    <h3>Key Responsibilities:</h3>
+                    <ul>
+                        <li>Led the design and implementation of a full-stack website for GHC Foundation, integrating PayPal donation systems and SEO, resulting in a 40% increase in engagement.</li>
+                        <li>Launched the company's official website, enhancing user experience and elevating brand identity.</li>
+                        <li>Delivered over 50 professional portfolios tailored to client specifications, achieving a 60% job interview success rate.</li>
+                    </ul>
+                    <div class="more-responsibilities">
+                        <h3>Additional Responsibilities:</h3>
                         <ul>
-                            <li>Led the design and implementation of a full-stack website for GHC Foundation, integrating PayPal donation systems and SEO, resulting in a 40% increase in engagement.</li>
-                            <li>Launched the company’s official website, enhancing user experience and elevating brand identity.</li>
-                            <li>Delivered over 50 professional portfolios tailored to client specifications, achieving a 60% job interview success rate.</li>
-                            <div class="more-responsibilities">
-                                <li>Updated and secured websites to optimize performance and ensure data integrity, reducing downtime by 25%.</li>
-                                <li>Conducted virtual consultations to identify client needs and transform them into actionable development plans.</li>
-                            </div>
+                            <li>Updated and secured websites to optimize performance and ensure data integrity, reducing downtime by 25%.</li>
+                            <li>Conducted virtual consultations to identify client needs and transform them into actionable development plans.</li>
                         </ul>
                     </div>
                 </div>
-                <!-- Trade Development Representative -->
-                <div class="job">
-                    <h2>Trade Development Representative - YDX Agency Ltd <span>(Nairobi, Kenya, Dec 2022 - May 2023)</span>
-                        <button class="expand-button" onclick="toggleDetails(this)">+</button>
-                    </h2>
-                    <div class="job-details">
-                        <h3>Roles and Responsibilities:</h3>
+            </div>
+            
+            <!-- Trade Development Representative -->
+            <div class="job">
+                <div class="job-header">
+                    <h2>Trade Development Representative - YDX Agency Ltd</h2>
+                    <span class="job-period">Nairobi, Kenya, Dec 2022 - May 2023</span>
+                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
+                </div>
+                <div class="job-details">
+                    <h3>Key Responsibilities:</h3>
+                    <ul>
+                        <li>Strengthened Safaricom product availability by forging partnerships with key retailers, increasing market coverage by 15%.</li>
+                        <li>Conducted training sessions on new product lines, improving retailer understanding and product promotion effectiveness.</li>
+                        <li>Maintained strict adherence to KYC and regulatory compliance, achieving a 100% compliance audit rating.</li>
+                    </ul>
+                    <div class="more-responsibilities">
+                        <h3>Additional Responsibilities:</h3>
                         <ul>
-                            <li>Strengthened Safaricom product availability by forging partnerships with key retailers, increasing market coverage by 15%.</li>
-                            <li>Conducted training sessions on new product lines, improving retailer understanding and product promotion effectiveness.</li>
-                            <li>Maintained strict adherence to KYC and regulatory compliance, achieving a 100% compliance audit rating.</li>
-                            <div class="more-responsibilities">
-                                <li>Provided technical and operational support to enhance retailer efficiency and reduce downtime.</li>
-                                <li>Executed strategic marketing initiatives, boosting visibility and engagement in high-value trade zones.</li>
-                            </div>
+                            <li>Provided technical and operational support to enhance retailer efficiency and reduce downtime.</li>
+                            <li>Executed strategic marketing initiatives, boosting visibility and engagement in high-value trade zones.</li>
                         </ul>
                     </div>
                 </div>
-                <!-- IT Assistant -->
-                <div class="job">
-                    <h2>IT Assistant - Mountain View School <span>(Nairobi, Kenya, May 2022 - Jul 2022 & Feb 2018 - Aug 2018)</span>
-                        <button class="expand-button" onclick="toggleDetails(this)">+</button>
-                    </h2>
-                    <div class="job-details">
-                        <h3>Roles and Responsibilities:</h3>
+            </div>
+            
+            <!-- IT Assistant -->
+            <div class="job">
+                <div class="job-header">
+                    <h2>IT Assistant - Mountain View School</h2>
+                    <span class="job-period">Nairobi, Kenya, May 2022 - Jul 2022 & Feb 2018 - Aug 2018</span>
+                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
+                </div>
+                <div class="job-details">
+                    <h3>Key Responsibilities:</h3>
+                    <ul>
+                        <li>Administered the school's ERP software, ensuring seamless operation and staff access.</li>
+                        <li>Delivered IT support services, resolving issues within 24 hours to minimize disruptions.</li>
+                        <li>Set up and deployed computer stations, improving accessibility for over 200 students.</li>
+                    </ul>
+                    <div class="more-responsibilities">
+                        <h3>Additional Responsibilities:</h3>
                         <ul>
-                            <li>Administered the school’s ERP software, ensuring seamless operation and staff access.</li>
-                            <li>Delivered IT support services, resolving issues within 24 hours to minimize disruptions.</li>
-                            <li>Set up and deployed computer stations, improving accessibility for over 200 students.</li>
-                            <div class="more-responsibilities">
-                                <li>Invigilated examinations, maintaining compliance with strict testing standards.</li>
-                                <li>Enhanced curriculum development by integrating digital tools into teaching strategies.</li>
-                            </div>
+                            <li>Invigilated examinations, maintaining compliance with strict testing standards.</li>
+                            <li>Enhanced curriculum development by integrating digital tools into teaching strategies.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--Education-->
+        <!-- Education Section -->
         <section class="education">
-            <div class="container">
-                <h1>Education</h1>
-                <div class="education-entry">
-                    <h2>Moringa School - Software Development <span>(Jun 2023-Dec 2023)</span></h2>
+            <h2>Education</h2>
+            
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>Moringa School</h3>
+                    <p class="degree">Software Development</p>
+                    <p class="period">Jun 2023 - Dec 2023</p>
                 </div>
-                <div class="education-entry">
-                    <h2>KCA University - Bachelor of Science in Information Technology <span>(Sep 2018 - Apr 2022)</span></h2>
+                
+                <div class="education-card">
+                    <h3>KCA University</h3>
+                    <p class="degree">Bachelor of Science in Information Technology</p>
+                    <p class="period">Sep 2018 - Apr 2022</p>
                 </div>
-                <div class="education-entry">
-                    <h2>KCA University - Cisco Networking Course <span>(May 2021- Aug 2021)</span></h2>
+                
+                <div class="education-card">
+                    <h3>KCA University</h3>
+                    <p class="degree">Cisco Networking Course</p>
+                    <p class="period">May 2021 - Aug 2021</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!--Footer-->
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer" aria-label="Contact information">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <p>Telephone: +254720064950</p>
-                    <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact</h3>
+                    <address>
+                        <p>Telephone: <a href="tel:+254720064950">+254720064950</a></p>
+                        <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+                    </address>
                 </div>
-                <div class="footer-right">
-                    <p>Location: Nairobi, Kenya</p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank">Ian Gichachi</a></p>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Location</h3>
+                    <p>Nairobi, Kenya</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Connect</h3>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
                 </div>
             </div>
-            <hr> <!-- Horizontal line for visual separation -->
-            <p class="copyright">&copy; Gichachi Ian Mwaura</p>
-            <hr> <!-- Horizontal line for visual separation -->
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All rights reserved.</p>
+            </div>
         </div>
-    </footer> 
+    </footer>
 
     <!-- Back to Top Button -->
-    <div class="back-to-top" title="Back to Top">
-        &#8679; <!-- Unicode up arrow icon -->
-    </div>
+    <button id="back-to-top" aria-label="Back to top" title="Back to Top">
+        &#8679;
+    </button>
 
     <script src="script.js"></script>
 </body>

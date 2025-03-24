@@ -3,115 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Competencies - Portfolio</title>
+    <title>Professional Competencies | Software Developer Portfolio</title>
+    <meta name="description" content="Technical and professional competencies of Ian Gichachi, Full-Stack Developer">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="competency.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- Navbar Section -->
-        <nav>
+    <!-- Video Background -->
+    <video autoplay muted loop id="videoBG" aria-hidden="true">
+        <source src="img/About video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Consistent Header with Index Page -->
+    <header aria-label="Main navigation">
+        <nav class="navbar">
             <div class="logo">
                 <a href="index.html">
-                    <img src="img/Logo.jpg" alt="Your Logo">
+                    <img src="img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50">
                 </a>
             </div>
-            <button class="menu-toggle" id="mobile-menu">
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
             <ul class="nav-links">
                 <li><a href="about.html">About</a></li>
-                <li><a href="competency.html" class="active">Competencies</a></li>
+                <li><a href="competency.html" aria-current="page">Competencies</a></li>
                 <li><a href="project.html">Projects</a></li>
-                <button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button>
+                <li><button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="competencies">
+        <!-- Competencies Section -->
+        <section class="competencies-section">
             <div class="container">
                 <h1>Core Competencies</h1>
-                <div class="card">
-                    <h2>Full-Stack Development</h2>
-                    <hr>
-                    <p>I specialise in crafting secure and efficient applications, utilising both front-end and back-end technologies to deliver seamless user experiences. My expertise includes JavaScript frameworks and API integration, ensuring scalable and robust solutions for every project.</p>
-                </div>
-                <div class="card">
-                    <h2>Portfolio Development</h2>
-                    <hr>
-                    <p>As an expert in creating tailored job-seeking portfolios, I’ve designed over 70 professional profiles using tools like Wix and strategic ChatGPT prompts. These portfolios have resulted in measurable client success, including a 30% increase in remote job placements.</p>
-                </div>
-                <div class="card">
-                    <h2>Stakeholder Collaboration</h2>
-                    <hr>
-                    <p>I excel at bridging technical and business requirements by facilitating clear and productive communication. My ability to collaborate across teams has consistently resulted in streamlined workflows, improved efficiency, and project success.</p>
-                </div>
-                <div class="card">
-                    <h2>UX/UI Design</h2>
-                    <hr>
-                    <p>I have a strong passion for delivering user-centred designs that drive engagement and satisfaction. My focus on optimising user interfaces has enhanced client projects, achieving improved metrics like a 40% increase in website engagement.</p>
-                </div>
-                <div class="card">
-                    <h2>SEO Optimisation</h2>
-                    <hr>
-                    <p>I leverage advanced SEO tools and strategies to enhance website visibility and brand identity. My projects have demonstrated tangible results, such as a 40% boost in online engagement for clients through tailored digital solutions.</p>
-                </div>
-                <div class="card">
-                    <h2>Workflow Optimisation</h2>
-                    <hr>
-                    <p>I am skilled at identifying inefficiencies and implementing strategies that enhance productivity. By redesigning workflows, I’ve achieved up to a 20% reduction in turnaround times for complex projects, ensuring timely and quality deliverables.</p>
+                <div class="competencies-grid">
+                    <div class="competency-card">
+                        <div class="card-icon">💻</div>
+                        <h2>Full-Stack Development</h2>
+                        <div class="card-divider"></div>
+                        <p>I specialise in crafting secure and efficient applications, utilising both front-end and back-end technologies to deliver seamless user experiences. My expertise includes JavaScript frameworks and API integration, ensuring scalable and robust solutions for every project.</p>
+                    </div>
+                    
+                    <div class="competency-card">
+                        <div class="card-icon">📂</div>
+                        <h2>Portfolio Development</h2>
+                        <div class="card-divider"></div>
+                        <p>As an expert in creating tailored job-seeking portfolios, I've designed over 70 professional profiles using tools like Wix and strategic ChatGPT prompts. These portfolios have resulted in measurable client success, including a 30% increase in remote job placements.</p>
+                    </div>
+                    
+                    <div class="competency-card">
+                        <div class="card-icon">🤝</div>
+                        <h2>Stakeholder Collaboration</h2>
+                        <div class="card-divider"></div>
+                        <p>I excel at bridging technical and business requirements by facilitating clear and productive communication. My ability to collaborate across teams has consistently resulted in streamlined workflows, improved efficiency, and project success.</p>
+                    </div>
+                    
+                    <div class="competency-card">
+                        <div class="card-icon">🎨</div>
+                        <h2>UX/UI Design</h2>
+                        <div class="card-divider"></div>
+                        <p>I have a strong passion for delivering user-centred designs that drive engagement and satisfaction. My focus on optimising user interfaces has enhanced client projects, achieving improved metrics like a 40% increase in website engagement.</p>
+                    </div>
+                    
+                    <div class="competency-card">
+                        <div class="card-icon">🔍</div>
+                        <h2>SEO Optimisation</h2>
+                        <div class="card-divider"></div>
+                        <p>I leverage advanced SEO tools and strategies to enhance website visibility and brand identity. My projects have demonstrated tangible results, such as a 40% boost in online engagement for clients through tailored digital solutions.</p>
+                    </div>
+                    
+                    <div class="competency-card">
+                        <div class="card-icon">⚙️</div>
+                        <h2>Workflow Optimisation</h2>
+                        <div class="card-divider"></div>
+                        <p>I am skilled at identifying inefficiencies and implementing strategies that enhance productivity. By redesigning workflows, I've achieved up to a 20% reduction in turnaround times for complex projects, ensuring timely and quality deliverables.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--Tools-->
-        <section class="tools-technologies">
+        <!-- Tools & Technologies Section -->
+        <section class="tools-section">
             <div class="container">
-                <h1 class="tools-title">Tools & Technologies</h1>
+                <h1>Tools & Technologies</h1>
                 <div class="tools-grid">
-                    <div class="tool">Wix</div>
-                    <div class="tool">ChatGPT</div>
-                    <div class="tool">Google Meet</div>
-                    <div class="tool">PayPal Integration</div>
-                    <div class="tool">SEO Tools</div>
-                    <div class="tool">Microsoft Office</div>
-                    <div class="tool">ReactJS</div>
-                    <div class="tool">HTML5</div>
-                    <div class="tool">CSS3</div>
-                    <div class="tool">ERP Systems</div>
-                    <div class="tool">Database Tools</div>
-                    <div class="tool">GitHub</div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🖥️</div>
+                        <h3>Wix</h3>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🤖</div>
+                        <h3>ChatGPT</h3>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">📹</div>
+                        <h3>Google Meet</h3>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">💳</div>
+                        <h3>PayPal Integration</h3>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🔎</div>
+                        <h3>SEO Tools</h3>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">📊</div>
+                        <h3>Microsoft Office</h3>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">⚛️</div>
+                        <h3>ReactJS</h3>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">📄</div>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🎨</div>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">📦</div>
+                        <h3>ERP Systems</h3>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🗃️</div>
+                        <h3>Database Tools</h3>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🐙</div>
+                        <h3>GitHub</h3>
+                    </div>
                 </div>
             </div>
         </section>
-        
     </main>
-    
-    <!--Footer-->
-    <footer class="footer">
+
+    <!-- Footer -->
+    <footer class="footer" aria-label="Contact information">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <p>Telephone: +254720064950</p>
-                    <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact</h3>
+                    <address>
+                        <p>Telephone: <a href="tel:+254720064950">+254720064950</a></p>
+                        <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+                    </address>
                 </div>
-                <div class="footer-right">
-                    <p>Location: Nairobi, Kenya</p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank">Ian Gichachi</a></p>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Location</h3>
+                    <p>Nairobi, Kenya</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Connect</h3>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
                 </div>
             </div>
-            <hr> <!-- Horizontal line for visual separation -->
-            <p class="copyright">&copy; Gichachi Ian Mwaura</p>
-            <hr> <!-- Horizontal line for visual separation -->
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All rights reserved.</p>
+            </div>
         </div>
-    </footer>  
+    </footer>
 
     <!-- Back to Top Button -->
-    <div id="back-to-top" title="Back to Top">
-        &#8679; <!-- Unicode up arrow icon -->
-    </div>
+    <button id="back-to-top" aria-label="Back to top" title="Back to Top">
+        &#8679;
+    </button>
 
     <script src="script.js"></script>
 </body>

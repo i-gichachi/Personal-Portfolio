@@ -3,125 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Ian Gichachi | Software Developer Portfolio</title>
+    <meta name="description" content="Professional portfolio of Ian Gichachi, Full-Stack Developer with expertise in web development and portfolio creation.">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- Navbar Section -->
-        <nav>
+    <!-- Header with improved accessibility -->
+    <header aria-label="Main navigation">
+        <nav class="navbar">
             <div class="logo">
-                <img src="img/Logo.jpg" alt="Your Logo" class="logo-img">
+                <img src="img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50">
             </div>
-            <button class="menu-toggle" id="mobile-menu">
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
             <ul class="nav-links">
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
                 <li><a href="competency.html">Competencies</a></li>
                 <li><a href="project.html">Projects</a></li>
-                <button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button>
+                <li><button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Introduction Section -->
-    <section class="intro">
-        <div class="intro-text">
-            <h1 class="pulse">Ian Gichachi</h1>
-            <p class="pulse">Software Developer</p>
-        </div>
-        <div class="intro-img">
-            <img src="img/Main pic.jpg" alt="Your Portrait">
+    <!-- Hero Section with improved layout -->
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 id="hero-heading" class="pulse">Ian Gichachi</h1>
+                <p class="pulse subtitle">Full-Stack Software Developer</p>
+                <p class="hero-description">Creating innovative, secure, and user-friendly digital solutions</p>
+            </div>
+            <div class="hero-image">
+                <img src="img/Main pic.jpg" alt="Portrait of Ian Gichachi" width="500" height="600" loading="lazy">
+            </div>
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section class="about-me">
-        <video autoplay muted loop id="myVideo">
+    <!-- About Section with video background -->
+    <section class="about" aria-labelledby="about-heading">
+        <video autoplay muted loop id="about-video" aria-hidden="true">
             <source src="/img/Background video html.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
         <div class="container">
-            <p>
+            <h2 id="about-heading" class="visually-hidden">About Ian Gichachi</h2>
+            <p class="about-text">
                 Driven Full-Stack Web Developer with over 4 years of experience in crafting innovative, secure, and user-friendly software solutions. Expertise includes front-end and back-end development, network management, and operating systems, delivering high-impact projects that enhance user engagement and performance. Skilled in using Wix as a cloud-based website builder to create customized and professional portfolios for clients, achieving exceptional results in client job placement. Proficient in leveraging ChatGPT and designing advanced prompts to create highly effective job-seeking portfolios that have significantly improved client hiring success rates. Experienced in stakeholder collaboration and cross-functional communication to translate complex requirements into functional applications. Seeking to leverage proven technical and creative skills in a challenging remote role to drive organizational success.
             </p>
-            <button onclick="window.location.href='about.html';">Learn More About Me</button>
+            <button onclick="window.location.href='about.html';" class="cta-button">Learn More About Me</button>
         </div>
     </section>
 
-    <!-- Competencies Section -->
-    <section class="competencies">
+    <!-- Competencies Section with improved accordion -->
+    <section class="competencies" aria-labelledby="competencies-heading">
         <div class="container">
-            <h2>Here are some of my key strengths:</h2>
-            <div class="accordion-item">
-                <button class="accordion-button" onclick="toggleAccordion(this)">Full-Stack Development <span>+</span></button>
-                <div class="accordion-content">
-                    <p>I specialise in crafting secure and efficient applications, utilising both front-end and back-end technologies to deliver seamless user experiences. My expertise includes JavaScript frameworks and API integration, ensuring scalable and robust solutions for every project.</p>
+            <h2 id="competencies-heading">Here are some of my key strengths:</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="accordion-content-1">
+                        Full-Stack Development <span class="accordion-icon">+</span>
+                    </button>
+                    <div id="accordion-content-1" class="accordion-content">
+                        <p>I specialise in crafting secure and efficient applications, utilising both front-end and back-end technologies to deliver seamless user experiences. My expertise includes JavaScript frameworks and API integration, ensuring scalable and robust solutions for every project.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="accordion-content-2">
+                        Portfolio Development <span class="accordion-icon">+</span>
+                    </button>
+                    <div id="accordion-content-2" class="accordion-content">
+                        <p>As an expert in creating tailored job-seeking portfolios, I've designed over 70 professional profiles using tools like Wix and strategic ChatGPT prompts. These portfolios have resulted in measurable client success, including a 30% increase in remote job placements.</p>
+                    </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <button class="accordion-button" onclick="toggleAccordion(this)">Portfolio Development <span>+</span></button>
-                <div class="accordion-content">
-                    <p>As an expert in creating tailored job-seeking portfolios, I’ve designed over 70 professional profiles using tools like Wix and strategic ChatGPT prompts. These portfolios have resulted in measurable client success, including a 30% increase in remote job placements.</p>
-                </div>
-            </div>
-            <button class="see-more" onclick="window.location.href='competency.html';">See All Competencies</button>
+            <button onclick="window.location.href='competency.html';" class="cta-button see-more">View All Competencies</button>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects">
+    <!-- Projects Section with enhanced carousel -->
+    <section class="projects" aria-labelledby="projects-heading">
         <div class="container">
-            <h2>Highlighted Projects</h2>
-            <div class="carousel">
-                <div class="carousel-track-container">
-                    <ul class="carousel-track">
-                        <li class="carousel-slide" onclick="location.href='project.html';">
-                            <img src="img/GHC Foundation.png" alt="GHC Foundation Website">
-                            <div class="title">
-                                <h3>GHC Foundation Website</h3>
-                            </div>
-                        </li>
-                        <li class="carousel-slide" onclick="location.href='project.html';">
-                            <img src="img/Careers Without Borders.png" alt="Careers Without Borders Official Website">
-                            <div class="title">
-                                <h3>Careers Without Borders Official Website</h3>
-                            </div>
-                        </li>
-                    </ul>
+            <h2 id="projects-heading">Highlighted Projects</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <!-- Project items will be added dynamically via JavaScript -->
+                    </div>
                 </div>
-                <button class="carousel-control left" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="carousel-control right" onclick="moveSlide(1)">&#10095;</button>
+                <button class="carousel-control prev" aria-label="Previous project">&#10094;</button>
+                <button class="carousel-control next" aria-label="Next project">&#10095;</button>
+                <div class="carousel-dots">
+                    <!-- Dots will be added dynamically via JavaScript -->
+                </div>
             </div>
         </div>
     </section>
 
-    <!--Footer-->
-    <footer class="footer">
+    <!-- Footer with improved structure -->
+    <footer class="footer" aria-label="Contact information">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <p>Telephone: +254720064950</p>
-                    <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact</h3>
+                    <address>
+                        <p>Telephone: <a href="tel:+254720064950">+254720064950</a></p>
+                        <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+                    </address>
                 </div>
-                <div class="footer-right">
-                    <p>Location: Nairobi, Kenya</p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank">Ian Gichachi</a></p>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Location</h3>
+                    <p>Nairobi, Kenya</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Connect</h3>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
                 </div>
             </div>
-            <hr> <!-- Horizontal line for visual separation -->
-            <p class="copyright">&copy; Gichachi Ian Mwaura</p>
-            <hr> <!-- Horizontal line for visual separation -->
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All rights reserved.</p>
+            </div>
         </div>
-    </footer>    
+    </footer>
 
     <!-- Back to Top Button -->
-    <div id="back-to-top" title="Back to Top">
-        &#8679; <!-- Unicode up arrow icon -->
-    </div>
+    <button id="back-to-top" aria-label="Back to top" title="Back to Top">
+        &#8679;
+    </button>
     
     <script src="script.js"></script>
 </body>
