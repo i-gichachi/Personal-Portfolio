@@ -23,7 +23,7 @@
                 <span class="bar"></span>
             </button>
             <ul class="nav-links">
-                <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="competency.html">Competencies</a></li>
                 <li><a href="project.html">Projects</a></li>
                 <li><button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button></li>
@@ -56,7 +56,9 @@
             <p class="about-text">
                 Driven Full-Stack Web Developer with over 4 years of experience in crafting innovative, secure, and user-friendly software solutions. Expertise includes front-end and back-end development, network management, and operating systems, delivering high-impact projects that enhance user engagement and performance. Skilled in using Wix as a cloud-based website builder to create customized and professional portfolios for clients, achieving exceptional results in client job placement. Proficient in leveraging ChatGPT and designing advanced prompts to create highly effective job-seeking portfolios that have significantly improved client hiring success rates. Experienced in stakeholder collaboration and cross-functional communication to translate complex requirements into functional applications. Seeking to leverage proven technical and creative skills in a challenging remote role to drive organizational success.
             </p>
-            <button onclick="window.location.href='about.html';" class="cta-button">Learn More About Me</button>
+            <div class="button-container">
+                <button onclick="window.location.href='about.html';" class="cta-button">Learn More About Me</button>
+            </div>
         </div>
     </section>
 
@@ -82,7 +84,9 @@
                     </div>
                 </div>
             </div>
-            <button onclick="window.location.href='competency.html';" class="cta-button see-more">View All Competencies</button>
+            <div class="button-container">
+                <button onclick="window.location.href='competency.html';" class="cta-button see-more">View All Competencies</button>
+            </div>
         </div>
     </section>
 
@@ -98,9 +102,57 @@
                 </div>
                 <button class="carousel-control prev" aria-label="Previous project">&#10094;</button>
                 <button class="carousel-control next" aria-label="Next project">&#10095;</button>
-                <div class="carousel-dots">
-                    <!-- Dots will be added dynamically via JavaScript -->
+            </div>
+            <div class="button-container">
+                <button onclick="window.location.href='project.html';" class="cta-button view-all-btn">View All Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="testimonials-heading">Success Stories</h2>
+                <p class="section-subtitle">Direct from clients and LinkedIn</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <!-- LinkedIn Post Testimonial 1 -->
+                <div class="testimonial-card linkedin-card">
+                    <div class="testimonial-screenshot">
+                        <img src="img/Testimonials 2.jpg" alt="LinkedIn testimonial screenshot">
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7308381845509820416/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="verify-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
+                            </svg>
+                            View Post
+                        </a>
+                    </div>
                 </div>
+
+                <!-- LinkedIn Post Testimonial 2 -->
+                <div class="testimonial-card linkedin-card">
+                    <div class="testimonial-screenshot">
+                        <img src="img/Testimonials 1.jpg" alt="LinkedIn testimonial screenshot">
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7186242043831033856/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="verify-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
+                            </svg>
+                            View Post
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="button-container">
+                <a href="about.html#testimonials" class="cta-button">View All Testimonials</a>
             </div>
         </div>
     </section>

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // ==================== Mobile Menu Toggle ====================
+    // Mobile Menu Toggle
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
     
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ==================== Hero Section Animation ====================
+    // Hero Section Animation
     const heroText = document.querySelector('.hero-text');
     const heroImage = document.querySelector('.hero-image');
     
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(animateHero, 300);
     }
 
-    // ==================== Accordion Functionality ====================
+    // Accordion Functionality
     document.querySelectorAll('.accordion-button').forEach(button => {
         button.addEventListener('click', () => {
             const expanded = button.getAttribute('aria-expanded') === 'true';
@@ -49,37 +49,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ==================== Experience Section Toggles ====================
-    document.querySelectorAll('.expand-button').forEach(button => {
-        button.addEventListener('click', function() {
-            const details = this.closest('.job-header').nextElementSibling;
-            const moreInfo = details.querySelector('.more-responsibilities');
-            
-            moreInfo.classList.toggle('show');
-            this.textContent = moreInfo.classList.contains('show') ? '-' : '+';
-        });
-    });
-
-    // ==================== Enhanced Infinite Carousel ====================
+    // Enhanced Carousel Implementation
     class Carousel {
         constructor(projects = []) {
             this.carousel = document.querySelector('.carousel-inner');
-            this.dotsContainer = document.querySelector('.carousel-dots');
             this.prevBtn = document.querySelector('.prev');
             this.nextBtn = document.querySelector('.next');
             this.projects = projects;
             this.currentIndex = 0;
             this.autoRotateInterval = null;
-            this.autoRotateDelay = 5000;
+            this.autoRotateDelay = 5000; // 5 seconds
             this.isAnimating = false;
+            this.visibleItems = window.innerWidth >= 992 ? 2 : 1;
             
-            if (this.carousel && this.projects.length > 0) this.init();
+            if (this.carousel && this.projects.length > 0) {
+                this.init();
+            }
         }
         
         init() {
             this.createItems();
-            this.createDots();
-            this.updateDots();
             
             // Navigation controls
             if (this.prevBtn) this.prevBtn.addEventListener('click', () => this.prevSlide());
@@ -92,6 +81,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Touch support
             this.setupTouchEvents();
+            
+            // Responsive adjustments
+            window.addEventListener('resize', () => this.handleResize());
         }
         
         createItems() {
@@ -110,44 +102,34 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.carousel.appendChild(item);
             });
             
-            // Clone first/last items for infinite loop
-            if (this.projects.length > 1) {
-                const firstItem = this.carousel.firstElementChild.cloneNode(true);
-                const lastItem = this.carousel.lastElementChild.cloneNode(true);
-                this.carousel.insertBefore(lastItem, this.carousel.firstElementChild);
-                this.carousel.appendChild(firstItem);
-                this.carousel.style.transform = `translateX(-100%)`;
+            // Clone first/last items for infinite loop if we have enough projects
+            if (this.projects.length > this.visibleItems) {
+                const firstItems = Array.from(this.carousel.children).slice(0, this.visibleItems);
+                const lastItems = Array.from(this.carousel.children).slice(-this.visibleItems);
+                
+                firstItems.forEach(item => {
+                    const clone = item.cloneNode(true);
+                    this.carousel.appendChild(clone);
+                });
+                
+                lastItems.forEach(item => {
+                    const clone = item.cloneNode(true);
+                    this.carousel.insertBefore(clone, this.carousel.firstChild);
+                });
+                
+                // Set initial position
+                this.carousel.style.transform = `translateX(-${100 * this.visibleItems}%)`;
             }
         }
         
-        createDots() {
-            if (!this.dotsContainer || this.projects.length <= 1) return;
-            
-            this.dotsContainer.innerHTML = '';
-            this.projects.forEach((_, i) => {
-                const dot = document.createElement('button');
-                dot.className = 'carousel-dot';
-                dot.setAttribute('aria-label', `View project ${i + 1}`);
-                this.dotsContainer.appendChild(dot);
-            });
-        }
-        
-        updateDots() {
-            if (!this.dotsContainer || this.projects.length <= 1) return;
-            
-            document.querySelectorAll('.carousel-dot').forEach((dot, i) => {
-                dot.classList.toggle('active', i === this.currentIndex);
-            });
-        }
-        
         goToSlide(index, animate = true) {
-            if (this.isAnimating) return;
+            if (this.isAnimating || this.projects.length <= this.visibleItems) return;
             
             this.isAnimating = true;
             this.currentIndex = index;
+            
             this.carousel.style.transition = animate ? 'transform 0.5s ease' : 'none';
-            this.carousel.style.transform = `translateX(-${100 * (this.currentIndex + 1)}%)`;
-            this.updateDots();
+            this.carousel.style.transform = `translateX(-${100 * (this.currentIndex + this.visibleItems)}%)`;
             
             setTimeout(() => {
                 this.isAnimating = false;
@@ -156,36 +138,39 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         checkBoundaries() {
-            if (!this.projects.length) return;
+            if (this.projects.length <= this.visibleItems) return;
             
+            // If we've scrolled past the end, reset to beginning
             if (this.currentIndex >= this.projects.length) {
                 this.currentIndex = 0;
                 this.carousel.style.transition = 'none';
-                this.carousel.style.transform = `translateX(-100%)`;
+                this.carousel.style.transform = `translateX(-${100 * this.visibleItems}%)`;
                 setTimeout(() => this.carousel.style.transition = 'transform 0.5s ease', 10);
             } 
+            // If we've scrolled before the beginning, reset to end
             else if (this.currentIndex < 0) {
                 this.currentIndex = this.projects.length - 1;
                 this.carousel.style.transition = 'none';
-                this.carousel.style.transform = `translateX(-${100 * this.projects.length}%)`;
+                this.carousel.style.transform = `translateX(-${100 * (this.projects.length + this.visibleItems - 1)}%)`;
                 setTimeout(() => this.carousel.style.transition = 'transform 0.5s ease', 10);
             }
         }
         
         nextSlide() {
-            if (this.isAnimating || !this.projects.length) return;
+            if (this.isAnimating || this.projects.length <= this.visibleItems) return;
             this.currentIndex = (this.currentIndex + 1) % this.projects.length;
             this.goToSlide(this.currentIndex);
         }
         
         prevSlide() {
-            if (this.isAnimating || !this.projects.length) return;
+            if (this.isAnimating || this.projects.length <= this.visibleItems) return;
             this.currentIndex = (this.currentIndex - 1 + this.projects.length) % this.projects.length;
             this.goToSlide(this.currentIndex);
         }
         
         setupTouchEvents() {
             let touchStartX = 0;
+            let touchEndX = 0;
             
             this.carousel.addEventListener('touchstart', (e) => {
                 touchStartX = e.touches[0].clientX;
@@ -193,16 +178,22 @@ document.addEventListener('DOMContentLoaded', function() {
             }, { passive: true });
             
             this.carousel.addEventListener('touchend', (e) => {
-                const touchEndX = e.changedTouches[0].clientX;
-                if (touchStartX - touchEndX > 50) this.nextSlide();
-                else if (touchEndX - touchStartX > 50) this.prevSlide();
+                touchEndX = e.changedTouches[0].clientX;
+                const threshold = 50;
+                
+                if (touchStartX - touchEndX > threshold) {
+                    this.nextSlide();
+                } else if (touchEndX - touchStartX > threshold) {
+                    this.prevSlide();
+                }
+                
                 this.startAutoRotate();
             }, { passive: true });
         }
         
         startAutoRotate() {
             this.stopAutoRotate();
-            if (this.projects.length > 1) {
+            if (this.projects.length > this.visibleItems) {
                 this.autoRotateInterval = setInterval(() => this.nextSlide(), this.autoRotateDelay);
             }
         }
@@ -213,9 +204,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.autoRotateInterval = null;
             }
         }
+        
+        handleResize() {
+            // Adjust number of visible items based on screen size
+            const newVisibleItems = window.innerWidth >= 992 ? 2 : 1;
+            
+            if (newVisibleItems !== this.visibleItems) {
+                this.visibleItems = newVisibleItems;
+                this.createItems();
+                this.goToSlide(this.currentIndex, false);
+            }
+        }
     }
 
-    // ==================== Initialize Carousel ====================
+    // Initialize Carousel with your projects
     const projects = [
         {
             title: "GHC Foundation Website",
@@ -227,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "img/Careers Without Borders.png",
             link: "project.html"
         }
-        // Add new projects here:
+        // Add more projects as needed:
         // { title: "Project 3", image: "img/project3.png", link: "project.html" }
     ];
 
@@ -235,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
         new Carousel(projects);
     }
 
-    // ==================== Back to Top Button ====================
+    // Back to Top Button
     const backToTopBtn = document.getElementById('back-to-top');
     if (backToTopBtn) {
         window.addEventListener('scroll', () => {
@@ -247,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ==================== Update Copyright Year ====================
+    // Update Copyright Year
     const yearElement = document.getElementById('current-year');
     if (yearElement) yearElement.textContent = new Date().getFullYear();
 });
