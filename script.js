@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Menu Toggle
+    // ==================== Mobile Menu Toggle ====================
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
     
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Hero Section Animation
+    // ==================== Hero Section Animation ====================
     const heroText = document.querySelector('.hero-text');
     const heroImage = document.querySelector('.hero-image');
     
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(animateHero, 300);
     }
 
-    // Accordion Functionality
+    // ==================== Accordion Functionality ====================
     document.querySelectorAll('.accordion-button').forEach(button => {
         button.addEventListener('click', () => {
             const expanded = button.getAttribute('aria-expanded') === 'true';
@@ -49,7 +49,29 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Enhanced Carousel Implementation
+    // ==================== Experience Section Toggles ====================
+    document.querySelectorAll('.expand-button').forEach(button => {
+        button.addEventListener('click', function() {
+            const jobDetails = this.closest('.job-header').nextElementSibling;
+            const moreInfo = jobDetails.querySelector('.more-responsibilities');
+            const isExpanded = moreInfo.classList.contains('show');
+            
+            // Toggle visibility
+            moreInfo.classList.toggle('show');
+            
+            // Update button text
+            this.textContent = isExpanded ? '+' : '-';
+            
+            // Smooth scroll to show the expanded content
+            if (!isExpanded) {
+                setTimeout(() => {
+                    jobDetails.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 300);
+            }
+        });
+    });
+
+    // ==================== Enhanced Carousel ====================
     class Carousel {
         constructor(projects = []) {
             this.carousel = document.querySelector('.carousel-inner');
@@ -58,13 +80,11 @@ document.addEventListener('DOMContentLoaded', function() {
             this.projects = projects;
             this.currentIndex = 0;
             this.autoRotateInterval = null;
-            this.autoRotateDelay = 5000; // 5 seconds
+            this.autoRotateDelay = 5000;
             this.isAnimating = false;
             this.visibleItems = window.innerWidth >= 992 ? 2 : 1;
             
-            if (this.carousel && this.projects.length > 0) {
-                this.init();
-            }
+            if (this.carousel && this.projects.length > 0) this.init();
         }
         
         init() {
@@ -217,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Initialize Carousel with your projects
+    // ==================== Initialize Carousel ====================
     const projects = [
         {
             title: "GHC Foundation Website",
@@ -229,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "img/Careers Without Borders.png",
             link: "project.html"
         }
-        // Add more projects as needed:
+        // Add new projects here:
         // { title: "Project 3", image: "img/project3.png", link: "project.html" }
     ];
 
@@ -237,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function() {
         new Carousel(projects);
     }
 
-    // Back to Top Button
+    // ==================== Back to Top Button ====================
     const backToTopBtn = document.getElementById('back-to-top');
     if (backToTopBtn) {
         window.addEventListener('scroll', () => {
@@ -249,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Update Copyright Year
+    // ==================== Update Copyright Year ====================
     const yearElement = document.getElementById('current-year');
     if (yearElement) yearElement.textContent = new Date().getFullYear();
 });
