@@ -2,12 +2,18 @@
     "cleanUrls": true,
     "trailingSlash": false,
     "rewrites": [
+      { "source": "/", "destination": "/index.html" },
       { "source": "/about", "destination": "/about.html" },
       { "source": "/competency", "destination": "/competency.html" },
       { "source": "/project", "destination": "/project.html" },
       { "source": "/services", "destination": "/services.html" }
     ],
     "redirects": [
+      {
+        "source": "/index.html",
+        "destination": "/",
+        "permanent": true
+      },
       {
         "source": "/about.html",
         "destination": "/about",

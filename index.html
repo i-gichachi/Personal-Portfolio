@@ -1,262 +1,346 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ian Gichachi | Software Developer Portfolio</title>
-    <meta name="description" content="Professional portfolio of Ian Gichachi, Full-Stack Developer with expertise in web development and portfolio creation.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ian Gichachi | Portfolio Developer & Full-Stack Software Developer</title>
+  <meta name="description" content="Executive portfolio of Ian Gichachi — Portfolio Developer & Full-Stack Engineer. I build high-converting portfolios and secure, performant web products that win interviews and clients." />
+  <meta name="theme-color" content="#041e64" />
+  <!-- Favicon / App Icons -->
+  <link rel="icon" href="/img/Logo.jpg" />
+  <link rel="apple-touch-icon" href="/img/Logo.jpg" />
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Header with improved accessibility -->
-    <header aria-label="Main navigation">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50">
-            </div>
-            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="about">About</a></li>
-                <li><a href="competency">Competencies</a></li>
-                <li><a href="project">Projects</a></li>
-                <li><a href="services">Services</a></li>
-                <li><button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header aria-label="Main navigation">
+    <nav class="navbar container">
+      <a href="/" class="logo" aria-label="Go to homepage">
+        <img src="/img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50" />
+      </a>
 
-    <!-- Hero Section with improved layout -->
-    <section class="hero" aria-labelledby="hero-heading">
-        <div class="hero-container">
-            <div class="hero-text">
-                <h1 id="hero-heading" class="pulse">Ian Gichachi</h1>
-                <p class="pulse subtitle">Full-Stack Software Developer</p>
-                <p class="hero-description">Creating innovative, secure, and user-friendly digital solutions</p>
-            </div>
-            <div class="hero-image">
-                <img src="img/Main pic.jpg" alt="Portrait of Ian Gichachi" width="500" height="600" loading="lazy">
-            </div>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="/about">About</a></li>
+        <li><a href="/competency">Competencies</a></li>
+        <li><a href="/project">Projects</a></li>
+        <li><a href="/services">Services</a></li>
+        <li>
+          <button type="button" class="download-btn" onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'">
+            Download CV
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-container container">
+        <!-- text left on desktop -->
+        <div class="hero-text">
+          <h1 class="pulse">Ian Gichachi</h1>
+          <p class="subtitle pulse">Portfolio Developer & Full-Stack Software Developer</p>
+          <p class="hero-description">
+            I design <strong>high-converting portfolios</strong> and build <strong>secure, responsive web products</strong> that help clients land interviews and
+            organisations scale with confidence.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="https://calendly.com/iangichachi/30min" target="_blank" rel="noopener noreferrer">Book a Meeting</a>
+            <a class="btn btn-ghost" href="/project">View Case Studies</a>
+          </div>
+
+          <ul class="hero-metrics" aria-label="Key outcomes">
+            <li>
+              <span class="metric">100+</span>
+              Portfolios delivered
+            </li>
+            <li>
+              <span class="metric">50%</span>
+              Increase in remote job placements
+            </li>
+            <li>
+              <span class="metric">40%</span>
+              Engagement uplift for client site
+            </li>
+          </ul>
+
+          <div class="trust-row" aria-label="Tools I work with">
+            <span class="trust-pill">Wix</span>
+            <span class="trust-pill">React</span>
+            <span class="trust-pill">HTML5</span>
+            <span class="trust-pill">CSS3</span>
+            <span class="trust-pill">Python</span>
+            <span class="trust-pill">ChatGPT</span>
+            <span class="trust-pill">SEO</span>
+          </div>
         </div>
+
+        <!-- image right on desktop, first on mobile -->
+        <div class="hero-image">
+          <figure class="avatar">
+            <span class="avatar-ring" aria-hidden="true"></span>
+            <span class="avatar-glow" aria-hidden="true"></span>
+            <img src="/img/Main pic.jpg" alt="Portrait of Ian Gichachi" width="600" height="600" loading="eager" fetchpriority="high" />
+          </figure>
+        </div>
+      </div>
     </section>
 
-    <!-- About Section with video background -->
-    <section class="about" aria-labelledby="about-heading">
-        <video autoplay muted loop id="about-video" aria-hidden="true">
-            <source src="/img/Background video html.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
+    <!-- ABOUT PREVIEW -->
+    <section class="about">
+      <div class="video-background">
+        <video autoplay muted loop playsinline id="about-video" aria-hidden="true" poster="/img/video-poster.jpg">
+          <source src="/img/Background video html.mp4" type="video/mp4" />
+          <source src="/img/Background video html.webm" type="video/webm" />
+          Your browser does not support the video tag.
         </video>
-        <div class="container">
-            <h2 id="about-heading" class="visually-hidden">About Ian Gichachi</h2>
-            <p class="about-text">
-                Driven Full-Stack Web Developer with over 4 years of experience in crafting innovative, secure, and user-friendly software solutions. Expertise includes front-end and back-end development, network management, and operating systems, delivering high-impact projects that enhance user engagement and performance. Skilled in using Wix as a cloud-based website builder to create customized and professional portfolios for clients, achieving exceptional results in client job placement. Proficient in leveraging ChatGPT and designing advanced prompts to create highly effective job-seeking portfolios that have significantly improved client hiring success rates. Experienced in stakeholder collaboration and cross-functional communication to translate complex requirements into functional applications. Seeking to leverage proven technical and creative skills in a challenging remote role to drive organizational success.
-            </p>
-            <div class="button-container">
-                <button onclick="window.location.href='about';" class="cta-button">Learn More About Me</button>
-            </div>
+        <div class="video-fallback"></div>
+      </div>
+
+      <div class="container about-surface">
+        <h2 class="section-title">A results-driven partner for your growth</h2>
+        <p class="about-text">
+          With <strong>4+ years</strong> of hands-on experience across front-end, back-end, and portfolio strategy,
+          I translate complex requirements into clean, accessible interfaces and measurable outcomes.
+          I've delivered <strong>70+ professional portfolios</strong> and shipped production websites that
+          improved <strong>engagement by up to 40%</strong>. I collaborate closely with stakeholders and teams
+          to ensure deadlines, security, and performance never slip.
+        </p>
+        <div class="button-container">
+          <a href="/about" class="cta-button">Learn More About Me</a>
         </div>
+      </div>
     </section>
 
-    <!-- Competencies Section with improved accordion -->
-    <section class="competencies" aria-labelledby="competencies-heading">
-        <div class="container">
-            <h2 id="competencies-heading">Here are some of my key strengths:</h2>
-            <div class="accordion">
-                <div class="accordion-item">
-                    <button class="accordion-button" aria-expanded="false" aria-controls="accordion-content-1">
-                        Full-Stack Development <span class="accordion-icon">+</span>
-                    </button>
-                    <div id="accordion-content-1" class="accordion-content">
-                        <p>I specialise in crafting secure and efficient applications, utilising both front-end and back-end technologies to deliver seamless user experiences. My expertise includes JavaScript frameworks and API integration, ensuring scalable and robust solutions for every project.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-button" aria-expanded="false" aria-controls="accordion-content-2">
-                        Portfolio Development <span class="accordion-icon">+</span>
-                    </button>
-                    <div id="accordion-content-2" class="accordion-content">
-                        <p>As an expert in creating tailored job-seeking portfolios, I've designed over 70 professional profiles using tools like Wix and strategic ChatGPT prompts. These portfolios have resulted in measurable client success, including a 30% increase in remote job placements.</p>
-                    </div>
-                </div>
+    <!-- COMPETENCIES PREVIEW -->
+    <section class="competencies">
+      <div class="container">
+        <h2 class="section-title">What I'm best at</h2>
+
+        <div class="competency-cards">
+          <article class="competency-card">
+            <div class="icon-bubble" aria-hidden="true">
+              <i class="fas fa-code"></i>
             </div>
-            <div class="button-container">
-                <button onclick="window.location.href='competency';" class="cta-button see-more">View All Competencies</button>
+            <h3>Full-Stack Development</h3>
+            <p>I specialise in crafting secure and efficient applications, utilising both front-end and back-end technologies to deliver seamless user experiences. My expertise includes JavaScript frameworks and API integration, ensuring scalable and robust solutions for every project.</p>
+          </article>
+
+          <article class="competency-card">
+            <div class="icon-bubble" aria-hidden="true">
+              <i class="fas fa-briefcase"></i>
             </div>
+            <h3>Portfolio Development</h3>
+            <p>As an expert in creating tailored job-seeking portfolios, I've designed over 100 professional profiles using tools like Wix and strategic ChatGPT prompts. These portfolios have resulted in measurable client success, including a 50% increase in remote job placements.</p>
+          </article>
+
+          <article class="competency-card">
+            <div class="icon-bubble" aria-hidden="true">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>UX/UI & SEO</h3>
+            <p>I leverage advanced SEO tools and strategies to enhance website visibility and brand identity. My projects have demonstrated tangible results, such as a 40% boost in online engagement for clients through tailored digital solutions.</p>
+          </article>
         </div>
+
+        <div class="button-container">
+          <a href="/competency" class="cta-button">View All Competencies</a>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects Section with enhanced carousel -->
-    <section class="projects" aria-labelledby="projects-heading">
-        <div class="container">
-            <h2 id="projects-heading">Highlighted Projects</h2>
-            <div class="carousel-container">
-                <div class="carousel">
-                    <div class="carousel-inner">
-                        <!-- Project items will be added dynamically via JavaScript -->
-                    </div>
-                </div>
-                <button class="carousel-control prev" aria-label="Previous project">&#10094;</button>
-                <button class="carousel-control next" aria-label="Next project">&#10095;</button>
+    <!-- FEATURED PROJECTS -->
+    <section class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Work</h2>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-media">
+              <img src="/img/GHC Foundation.png" alt="GHC Foundation website mockup" loading="lazy" />
+              <span class="project-badge">Non-profit</span>
             </div>
-            <div class="button-container">
-                <button onclick="window.location.href='project';" class="cta-button view-all-btn">View All Projects</button>
+            <div class="project-body">
+              <h3>GHC Foundation Website</h3>
+              <p class="project-blurb">
+                A clean, donation-ready site with accessibility and SEO baked in — contributing to a <strong>40% engagement increase</strong>.
+              </p>
+              <ul class="chip-row" aria-label="Technologies">
+                <li class="chip">HTML5</li><li class="chip">CSS3</li><li class="chip">Python</li><li class="chip">PayPal API</li>
+              </ul>
+              <div class="project-links">
+                <a class="text-link" href="/project">Case Study</a>
+                <a class="text-link" href="https://www.theghcf.org/" target="_blank" rel="noopener noreferrer">Live Site</a>
+              </div>
             </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="/img/Careers Without Borders.png" alt="Careers Without Borders website mockup" loading="lazy" />
+              <span class="project-badge">Corporate</span>
+            </div>
+            <div class="project-body">
+              <h3>Careers Without Borders</h3>
+              <p class="project-blurb">
+                Official brand site focused on clarity and conversion, strengthening digital presence and reducing downtime by <strong>25%</strong>.
+              </p>
+              <ul class="chip-row" aria-label="Technologies">
+                <li class="chip">HTML5</li><li class="chip">CSS3</li><li class="chip">Python</li><li class="chip">Vercel</li>
+              </ul>
+              <div class="project-links">
+                <a class="text-link" href="/project">Case Study</a>
+                <a class="text-link" href="https://www.prcresume.com/home" target="_blank" rel="noopener noreferrer">Live Site</a>
+              </div>
+            </div>
+          </article>
         </div>
+
+        <div class="button-container">
+          <a href="/project" class="view-all-btn">View All Projects</a>
+        </div>
+      </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" aria-labelledby="testimonials-heading">
-        <div class="container">
-            <div class="section-header">
-                <h2 id="testimonials-heading">Success Stories</h2>
-                <p class="section-subtitle">Direct from clients and LinkedIn</p>
-            </div>
-            
-            <div class="testimonial-grid">
-                <!-- LinkedIn Post Testimonial 1 -->
-                <div class="testimonial-card linkedin-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/Testimonials 2.jpg" alt="LinkedIn testimonial screenshot">
-                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7308381845509820416/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        class="verify-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
-                            </svg>
-                            View Post
-                        </a>
-                    </div>
-                </div>
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title section-title-light">Results & Client Praise</h2>
 
-                <!-- LinkedIn Post Testimonial 2 -->
-                <div class="testimonial-card linkedin-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/Testimonials 1.jpg" alt="LinkedIn testimonial screenshot">
-                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7186242043831033856/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        class="verify-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
-                            </svg>
-                            View Post
-                        </a>
-                    </div>
-                </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-screenshot">
+              <img src="/img/Testimonials 2.jpg" alt="LinkedIn testimonial screenshot" />
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7308381845509820416/" target="_blank" rel="noopener noreferrer" class="verify-badge">
+                <i class="fab fa-linkedin"></i>
+                View Post
+              </a>
             </div>
-            
-            <div class="button-container">
-                <a href="about#testimonials" class="cta-button">View All Testimonials</a>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-screenshot">
+              <img src="/img/Testimonials 1.jpg" alt="LinkedIn testimonial screenshot" />
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7186242043831033856/" target="_blank" rel="noopener noreferrer" class="verify-badge">
+                <i class="fab fa-linkedin"></i>
+                View Post
+              </a>
             </div>
+          </article>
+          
+          <article class="testimonial-card">
+            <div class="testimonial-screenshot">
+              <img src="/img/Testimonials 3.jpg" alt="LinkedIn testimonial screenshot" />
+              <a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_testimonial-remote-workfromanywhere-activity-7310556158153441280-_uDp?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvB5bgBZT98TagDLkumj_5FKa-V7jAFIiA" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="verify-badge">
+                <i class="fab fa-linkedin"></i>
+                View Post
+              </a>
+            </div>
+          </article>
         </div>
+
+        <div class="button-container">
+          <a href="/about#testimonials" class="cta-button cta-button-light">View All Testimonials</a>
+        </div>
+      </div>
     </section>
 
-            <!-- Services Preview Section -->
-            <section class="services-preview" aria-labelledby="services-preview-heading">
-                <div class="container">
-                    <div class="section-header">
-                        <h2 id="services-preview-heading">Professional Services</h2>
-                        <p class="section-subtitle">Tailored solutions to elevate your career</p>
-                    </div>
-                    
-                    <div class="services-preview-grid">
-                        <!-- Service 1 -->
-                        <div class="service-preview-card">
-                            <div class="service-preview-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M21.008 3a1 1 0 0 1 1 1v5.5a2.5 2.5 0 0 0 0 5V20a1 1 0 0 1-1 1H2.992a1 1 0 0 1-1-1v-5.5a2.5 2.5 0 0 0 0-5V4a1 1 0 0 1 1-1h18.016ZM19 5H4v2.968l.154.013a4.5 4.5 0 0 1 4.285 3.135l.303.812.53-1.61a2.5 2.5 0 0 1 4.74-.123l.401 1.203.44-1.323a4.5 4.5 0 0 1 4.265-2.993L19 7.97V5Zm0 14v-2.03l-.154-.013a4.5 4.5 0 0 1-4.285-3.135l-.303-.812-.53 1.61a2.5 2.5 0 0 1-4.74.123l-.401-1.203-.44 1.323a4.5 4.5 0 0 1-4.265 2.993L4 16.03V19h15Z"/>
-                                </svg>
-                            </div>
-                            <h3>Portfolio Creation</h3>
-                            <p>Custom-designed portfolios that showcase your skills effectively to potential employers.</p>
-                            <a href="services.html" class="service-preview-link">
-                                Learn More
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                        
-                        <!-- Service 2 -->
-                        <div class="service-preview-card highlighted">
-                            <div class="service-preview-badge">Most Popular</div>
-                            <div class="service-preview-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M4 22a8 8 0 1 1 16 0h-2a6 6 0 1 0-12 0H4Zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6Zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4Z"/>
-                                </svg>
-                            </div>
-                            <h3>Portfolio Consultation</h3>
-                            <p>Expert review and optimization of your existing portfolio with actionable recommendations.</p>
-                            <a href="services.html" class="service-preview-link">
-                                Learn More
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                        
-                        <!-- Service 3 -->
-                        <div class="service-preview-card">
-                            <div class="service-preview-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M15 4H5v16h14V8h-4V4ZM3 2.992C3 2.444 3.447 2 3.999 2H16l5 5v13.993A1 1 0 0 1 20.007 22H3.993A1 1 0 0 1 3 21.008V2.992ZM12 11.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM7.5 14a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0Z"/>
-                                </svg>
-                            </div>
-                            <h3>Web Development</h3>
-                            <p>Custom front-end and full-stack development services for your digital presence.</p>
-                            <a href="services.html" class="service-preview-link">
-                                Learn More
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="view-all-container">
-                        <a href="services" class="view-all-btn">View All Services</a>
-                    </div>
-                </div>
-            </section>
-
-    <!-- Footer with improved structure -->
-    <footer class="footer" aria-label="Contact information">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3 class="footer-heading">Contact</h3>
-                    <address>
-                        <p>Telephone: <a href="tel:+254720064950">+254720064950</a></p>
-                        <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
-                    </address>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-heading">Location</h3>
-                    <p>Nairobi, Kenya</p>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-heading">Connect</h3>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All rights reserved.</p>
-            </div>
+    <!-- SERVICES PREVIEW -->
+    <section class="services-preview">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Services I Offer</h2>
         </div>
-    </footer>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" aria-label="Back to top" title="Back to Top">
-        &#8679;
-    </button>
-    
-    <script src="script.js"></script>
+        <div class="services-preview-grid">
+          <div class="service-preview-card">
+            <div class="service-preview-icon" aria-hidden="true">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Portfolio Creation</h3>
+            <p>ATS-friendly, visually distinct, and conversion-focused portfolios tailored to your goals.</p>
+            <a href="/services" class="service-preview-link">Learn More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-preview-card highlighted">
+            <div class="service-preview-badge">Most Popular</div>
+            <div class="service-preview-icon" aria-hidden="true">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3>Portfolio Consultation</h3>
+            <p>Audit, positioning, and a step-by-step upgrade plan to improve your interview rate.</p>
+            <a href="/services" class="service-preview-link">Learn More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-preview-card">
+            <div class="service-preview-icon" aria-hidden="true">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Modern, accessible front-ends and reliable back-ends with performance and security in mind.</p>
+            <a href="/services" class="service-preview-link">Learn More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="view-all-container">
+          <a href="/services" class="view-all-btn">View All Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Contact information">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-heading"></i> Contact</h3>
+          <address>
+            <p><i class="fas fa-phone"></i> <a href="tel:+254720064950">+254720064950</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+          </address>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading"><i class="fas fa-map-marker-alt"></i> Location</h3>
+          <p><i class="fas fa-city"></i> Nairobi, Kenya</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Connect</h3>
+          <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 </html>
