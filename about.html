@@ -1,396 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Me | Software Developer Portfolio</title>
-        <meta name="description" content="Professional background and experience of Ian Gichachi, Full-Stack Developer">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="about.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    </head>
-    
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me | Ian Gichachi - Portfolio Developer & Full-Stack Software Developer</title>
+  <meta name="description" content="Learn about Ian Gichachi's professional background, experience, and client success stories." />
+  <meta name="theme-color" content="#041e64" />
+  <!-- Favicon / App Icons -->
+  <link rel="icon" href="/img/Logo.jpg" />
+  <link rel="apple-touch-icon" href="/img/Logo.jpg" />
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="about.css" />
+</head>
 <body>
-    <!-- Video Background -->
-    <video autoplay muted loop id="videoBG" aria-hidden="true">
-        <source src="img/About video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+  <!-- Header -->
+  <header aria-label="Main navigation">
+    <nav class="navbar container">
+      <a href="/" class="logo" aria-label="Go to homepage">
+        <img src="/img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50" />
+      </a>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about" aria-current="page">About</a></li>
+        <li><a href="/competency">Competencies</a></li>
+        <li><a href="/project">Projects</a></li>
+        <li><a href="/services">Services</a></li>
+        <li>
+          <button type="button" class="download-btn" onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'">
+            Download CV
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Consistent Header with Index Page -->
-    <header aria-label="Main navigation">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50">
-                </a>
+  <main id="main">
+    <!-- Work Experience Section -->
+    <section class="experience-section">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+          <!-- Senior Portfolio Developer -->
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="job-header">
+                <h3>Senior Portfolio Developer</h3>
+                <span class="company">Careers Without Borders</span>
+                <span class="job-period">Oct 2024 - Present</span>
+              </div>
+              <div class="job-details">
+                <h4>Key Responsibilities:</h4>
+                <ul>
+                  <li>Spearheaded the portfolio department, introducing innovative processes.</li>
+                  <li>Designed and delivered over 80 international and domestic portfolios.</li>
+                  <li>Fostered collaboration among cross-functional teams.</li>
+                </ul>
+                <div class="more-responsibilities">
+                  <h4>Additional Responsibilities:</h4>
+                  <ul>
+                    <li>Achieved high client satisfaction, with multiple clients securing their dream remote jobs and referencing new business opportunities, increasing service demand by 25%.</li>
+                    <li>Enhanced team productivity by implementing workflow optimisation strategies, leading to a 50% reduction in turnaround time for portfolio completion.</li>
+                  </ul>
+                </div>
+                <button class="expand-btn">View Details <i class="fas fa-chevron-down"></i></button>
+              </div>
             </div>
-            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="about" aria-current="page">About</a></li>
-                <li><a href="competency">Competencies</a></li>
-                <li><a href="project">Projects</a></li>
-                <li><a href="services">Services</a></li>
-                <li><button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Work Experience Section -->
-        <section class="experience">
-            <h1>Work Experience</h1>
-            
-            <!-- Senior Portfolio Developer -->
-            <div class="job">
-                <div class="job-header">
-                    <h2>Senior Portfolio Developer - Careers Without Borders</h2>
-                    <span class="job-period">Remote, Oct 2024 - Present</span>
-                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
+          </article>
+          <!-- Portfolio & Software Developer -->
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="job-header">
+                <h3>Portfolio & Software Developer</h3>
+                <span class="company">Pro Resume Crafters</span>
+                <span class="job-period">Nov 2023 - Sep 2024</span>
+              </div>
+              <div class="job-details">
+                <h4>Key Responsibilities:</h4>
+                <ul>
+                  <li>Led the design and implementation of a full-stack website for GHC Foundation, integrating PayPal donation systems and SEO, resulting in a 40% increase in engagement.</li>
+                  <li>Launched the company's official website, enhancing user experience and elevating brand identity.</li>
+                  <li>Delivered over 50 professional portfolios tailored to client specifications, achieving a 60% job interview success rate.</li>
+                </ul>
+                <div class="more-responsibilities">
+                  <h4>Additional Responsibilities:</h4>
+                  <ul>
+                    <li>Updated and secured websites to optimise performance and ensure data integrity, reducing downtime by 25%.</li>
+                    <li>Conducted virtual consultations to identify client needs and transform them into actionable development plans.</li>
+                  </ul>
                 </div>
-                <div class="job-details">
-                    <h3>Key Responsibilities:</h3>
-                    <ul>
-                        <li>Spearheaded the portfolio department, introducing innovative processes.</li>
-                        <li>Designed and delivered over 40 international and domestic portfolios.</li>
-                        <li>Fostered collaboration among cross-functional teams.</li>
-                    </ul>
-                    <div class="more-responsibilities">
-                        <h3>Additional Responsibilities:</h3>
-                        <ul>
-                            <li>Achieved high client satisfaction, with multiple clients securing their dream remote jobs and referencing new business opportunities, increasing service demand by 25%.</li>
-                            <li>Enhanced team productivity by implementing workflow optimization strategies, leading to a 20% reduction in turnaround time for portfolio completion.</li>
-                        </ul>
-                    </div>
-                </div>
+                <button class="expand-btn">View Details <i class="fas fa-chevron-down"></i></button>
+              </div>
             </div>
-            
-            <!-- Portfolio & Software Developer -->
-            <div class="job">
-                <div class="job-header">
-                    <h2>Portfolio & Software Developer - Pro Resume Crafters</h2>
-                    <span class="job-period">Remote, Nov 2023 - Sep 2024</span>
-                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
+          </article>
+          <!-- Trade Development Representative -->
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="job-header">
+                <h3>Trade Development Representative</h3>
+                <span class="company">YDX Agency Ltd</span>
+                <span class="job-period">Nairobi, Kenya, Dec 2022 - May 2023</span>
+              </div>
+              <div class="job-details">
+                <h4>Key Responsibilities:</h4>
+                <ul>
+                  <li>Strengthened Safaricom product availability by forging partnerships with key retailers, increasing market coverage by 15%.</li>
+                  <li>Conducted training sessions on new product lines, improving retailer understanding and product promotion effectiveness.</li>
+                  <li>Maintained strict adherence to KYC and regulatory compliance, achieving a 100% compliance audit rating.</li>
+                </ul>
+                <div class="more-responsibilities">
+                  <h4>Additional Responsibilities:</h4>
+                  <ul>
+                    <li>Provided technical and operational support to enhance retailer efficiency and reduce downtime.</li>
+                    <li>Executed strategic marketing initiatives, boosting visibility and engagement in high-value trade zones.</li>
+                  </ul>
                 </div>
-                <div class="job-details">
-                    <h3>Key Responsibilities:</h3>
-                    <ul>
-                        <li>Led the design and implementation of a full-stack website for GHC Foundation, integrating PayPal donation systems and SEO, resulting in a 40% increase in engagement.</li>
-                        <li>Launched the company's official website, enhancing user experience and elevating brand identity.</li>
-                        <li>Delivered over 50 professional portfolios tailored to client specifications, achieving a 60% job interview success rate.</li>
-                    </ul>
-                    <div class="more-responsibilities">
-                        <h3>Additional Responsibilities:</h3>
-                        <ul>
-                            <li>Updated and secured websites to optimize performance and ensure data integrity, reducing downtime by 25%.</li>
-                            <li>Conducted virtual consultations to identify client needs and transform them into actionable development plans.</li>
-                        </ul>
-                    </div>
-                </div>
+                <button class="expand-btn">View Details <i class="fas fa-chevron-down"></i></button>
+              </div>
             </div>
-            
-            <!-- Trade Development Representative -->
-            <div class="job">
-                <div class="job-header">
-                    <h2>Trade Development Representative - YDX Agency Ltd</h2>
-                    <span class="job-period">Nairobi, Kenya, Dec 2022 - May 2023</span>
-                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
+          </article>
+          <!-- IT Assistant -->
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="job-header">
+                <h3>IT Assistant</h3>
+                <span class="company">Mountain View School</span>
+                <span class="job-period">Nairobi, Kenya, May 2022 - Jul 2022 & Feb 2018 - Aug 2018</span>
+              </div>
+              <div class="job-details">
+                <h4>Key Responsibilities:</h4>
+                <ul>
+                  <li>Administered the school's ERP software, ensuring seamless operation and staff access.</li>
+                  <li>Delivered IT support services, resolving issues within 24 hours to minimise disruptions.</li>
+                  <li>Set up and deployed computer stations, improving accessibility for over 200 students.</li>
+                </ul>
+                <div class="more-responsibilities">
+                  <h4>Additional Responsibilities:</h4>
+                  <ul>
+                    <li>Invigilated examinations, maintaining compliance with strict testing standards.</li>
+                    <li>Enhanced curriculum development by integrating digital tools into teaching strategies.</li>
+                  </ul>
                 </div>
-                <div class="job-details">
-                    <h3>Key Responsibilities:</h3>
-                    <ul>
-                        <li>Strengthened Safaricom product availability by forging partnerships with key retailers, increasing market coverage by 15%.</li>
-                        <li>Conducted training sessions on new product lines, improving retailer understanding and product promotion effectiveness.</li>
-                        <li>Maintained strict adherence to KYC and regulatory compliance, achieving a 100% compliance audit rating.</li>
-                    </ul>
-                    <div class="more-responsibilities">
-                        <h3>Additional Responsibilities:</h3>
-                        <ul>
-                            <li>Provided technical and operational support to enhance retailer efficiency and reduce downtime.</li>
-                            <li>Executed strategic marketing initiatives, boosting visibility and engagement in high-value trade zones.</li>
-                        </ul>
-                    </div>
-                </div>
+                <button class="expand-btn">View Details <i class="fas fa-chevron-down"></i></button>
+              </div>
             </div>
-            
-            <!-- IT Assistant -->
-            <div class="job">
-                <div class="job-header">
-                    <h2>IT Assistant - Mountain View School</h2>
-                    <span class="job-period">Nairobi, Kenya, May 2022 - Jul 2022 & Feb 2018 - Aug 2018</span>
-                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
-                </div>
-                <div class="job-details">
-                    <h3>Key Responsibilities:</h3>
-                    <ul>
-                        <li>Administered the school's ERP software, ensuring seamless operation and staff access.</li>
-                        <li>Delivered IT support services, resolving issues within 24 hours to minimize disruptions.</li>
-                        <li>Set up and deployed computer stations, improving accessibility for over 200 students.</li>
-                    </ul>
-                    <div class="more-responsibilities">
-                        <h3>Additional Responsibilities:</h3>
-                        <ul>
-                            <li>Invigilated examinations, maintaining compliance with strict testing standards.</li>
-                            <li>Enhanced curriculum development by integrating digital tools into teaching strategies.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section class="education">
-            <h2>Education</h2>
-            
-            <div class="education-grid">
-                <div class="education-card">
-                    <h3>Moringa School</h3>
-                    <p class="degree">Software Development</p>
-                    <p class="period">Jun 2023 - Dec 2023</p>
-                </div>
-                
-                <div class="education-card">
-                    <h3>KCA University</h3>
-                    <p class="degree">Bachelor of Science in Information Technology</p>
-                    <p class="period">Sep 2018 - Apr 2022</p>
-                </div>
-                
-                <div class="education-card">
-                    <h3>KCA University</h3>
-                    <p class="degree">Cisco Networking Course</p>
-                    <p class="period">May 2021 - Aug 2021</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Full Testimonials Section -->
-    <section id="testimonials" class="full-testimonials">
-        <video autoplay muted loop id="testimonials-video" aria-hidden="true">
-            <source src="img/About video.mp4" type="video/mp4">
-        </video>
-        <div class="container">
-            <div class="section-header">
-                <h2>Client Success Stories</h2>
-                <p class="section-subtitle">Verified outcomes from professionals I've worked with</p>
-            </div>
-            
-            <div class="testimonial-grid">
-                <!-- LinkedIn Post Testimonial 1 -->
-                <div class="testimonial-card linkedin-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/Testimonials 2.jpg" alt="LinkedIn testimonial screenshot">
-                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7308381845509820416/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        class="verify-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
-                            </svg>
-                            View Post
-                        </a>
-                    </div>
-                </div>
-        
-                <!-- LinkedIn Post Testimonial 2 -->
-                <div class="testimonial-card linkedin-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/Testimonials 1.jpg" alt="LinkedIn testimonial screenshot">
-                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7186242043831033856/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        class="verify-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
-                            </svg>
-                            View Post
-                        </a>
-                    </div>
-                </div>
-
-                <!-- LinkedIn Post Testimonial 3 -->
-                <div class="testimonial-card linkedin-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/Testimonials 3.jpg" alt="LinkedIn testimonial screenshot">
-                        <a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_testimonial-remote-workfromanywhere-activity-7310556158153441280-_uDp?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvB5bgBZT98TagDLkumj_5FKa-V7jAFIiA" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        class="verify-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
-                            </svg>
-                            View Post
-                        </a>
-                    </div>
-                </div>
-
-                <!-- LinkedIn Post Testimonial 4 -->
-                <div class="testimonial-card linkedin-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/Testimonials 4.jpg" alt="LinkedIn testimonial screenshot">
-                        <a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_she-was-earning-1000-a-month-as-a-marketing-activity-7308019485758676993-H2-z?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvB5bgBZT98TagDLkumj_5FKa-V7jAFIiA" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        class="verify-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
-                            </svg>
-                            View Post
-                        </a>
-                    </div>
-                </div>
-
-                <!-- LinkedIn Post Testimonial 5 -->
-                <div class="testimonial-card linkedin-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/Testimonials 5.jpg" alt="LinkedIn testimonial screenshot">
-                        <a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_landing-a-remote-job-isnt-luckits-strategy-activity-7303670752497573888-aDdr?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvB5bgBZT98TagDLkumj_5FKa-V7jAFIiA" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        class="verify-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
-                            </svg>
-                            View Post
-                        </a>
-                    </div>
-                </div>
-
-                <!-- LinkedIn Post Testimonial 6 -->
-                <div class="testimonial-card linkedin-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/Testimonials 6.jpg" alt="LinkedIn testimonial screenshot">
-                        <a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_remote-workfromanywhere-remotwork-activity-7298597374162014209-YuO3?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvB5bgBZT98TagDLkumj_5FKa-V7jAFIiA" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        class="verify-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
-                            </svg>
-                            View Post
-                        </a>
-                    </div>
-                </div>
-
-                <!-- LinkedIn Post Testimonial 7 -->
-                <div class="testimonial-card linkedin-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/Testimonials 7.jpg" alt="LinkedIn testimonial screenshot">
-                        <a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_i-dont-think-people-understand-how-critical-activity-7288450516714463234-cUL2?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvB5bgBZT98TagDLkumj_5FKa-V7jAFIiA" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        class="verify-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
-                            </svg>
-                            View Post
-                        </a>
-                    </div>
-                </div>
-
-                <!-- LinkedIn Post Testimonial 8 -->
-                <div class="testimonial-card linkedin-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/Testimonials 8.jpg" alt="LinkedIn testimonial screenshot">
-                        <a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_remote-workfromhome-workfromanywhere-activity-7288088142123782145-bDp6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvB5bgBZT98TagDLkumj_5FKa-V7jAFIiA" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        class="verify-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
-                            </svg>
-                            View Post
-                        </a>
-                    </div>
-                </div>
-
-                <!-- LinkedIn Post Testimonial 9 -->
-                <div class="testimonial-card linkedin-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/Testimonials 9.jpg" alt="LinkedIn testimonial screenshot">
-                        <a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_remote-workfromhome-workfromanywhere-activity-7283739416928358400-fJLY?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvB5bgBZT98TagDLkumj_5FKa-V7jAFIiA" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        class="verify-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
-                            </svg>
-                            View Post
-                        </a>
-                    </div>
-                </div>
-
-                <!-- LinkedIn Post Testimonial 10 -->
-                <div class="testimonial-card linkedin-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/Testimonials 10.jpg" alt="LinkedIn testimonial screenshot">
-                        <a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_testimmonial-remote-workfromanywhere-activity-7268134089604419584-h_L3?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvB5bgBZT98TagDLkumj_5FKa-V7jAFIiA" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        class="verify-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM19 19h-3v-5.5c0-.8-.7-1.5-1.5-1.5S13 12.7 13 13.5V19h-3V8h3v1.5c.5-.8 1.5-1.3 2.5-1.3 1.9 0 3.5 1.6 3.5 3.5V19z"/>
-                            </svg>
-                            View Post
-                        </a>
-                    </div>
-                </div>
-        
-                <!-- Regular Testimonial 1 
-                <div class="testimonial-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/testimonial1.jpg" alt="Client testimonial screenshot">
-                    </div>
-                </div> -->
-        
-                <!-- Regular Testimonial 2 
-                <div class="testimonial-card">
-                    <div class="testimonial-screenshot">
-                        <img src="img/testimonial2.jpg" alt="Client testimonial screenshot">
-                    </div>
-                </div> -->
-
-            </div>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer" aria-label="Contact information">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3 class="footer-heading">Contact</h3>
-                    <address>
-                        <p>Telephone: <a href="tel:+254720064950">+254720064950</a></p>
-                        <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
-                    </address>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-heading">Location</h3>
-                    <p>Nairobi, Kenya</p>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-heading">Connect</h3>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All rights reserved.</p>
-            </div>
+    <!-- Education Section -->
+    <section class="education-section">
+      <div class="container">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="education-grid">
+          <article class="education-card">
+            <div class="education-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Moringa School</h3>
+            <p class="degree">Software Development</p>
+            <p class="period">Jun 2023 - Dec 2023</p>
+          </article>
+          <article class="education-card">
+            <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>KCA University</h3>
+            <p class="degree">Bachelor of Science in Information Technology</p>
+            <p class="period">Sep 2018 - Apr 2022</p>
+          </article>
+          <article class="education-card">
+            <div class="education-icon"><i class="fas fa-network-wired"></i></div>
+            <h3>KCA University</h3>
+            <p class="degree">Cisco Networking Course</p>
+            <p class="period">May 2021 - Aug 2021</p>
+          </article>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" aria-label="Back to top" title="Back to Top">
-        &#8679;
-    </button>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title">Client Success Stories</h2>
+        <div class="testimonial-grid">
+          <!-- Two video testimonials -->
+          <article class="testimonial-card video-testimonial">
+            <div class="testimonial-media">
+              <video muted loop playsinline class="testimonial-video">
+                <source src="img/Testimonial Video 1.mp4" type="video/mp4">
+              </video>
+              <button class="video-control" aria-label="Unmute video"><i class="fas fa-volume-mute"></i></button>
+            </div>
+            <div class="testimonial-body">
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7351493707696680960/" target="_blank" rel="noopener noreferrer" class="verify-badge">
+                <i class="fab fa-linkedin"></i> View Post
+              </a>
+            </div>
+          </article>
+          <article class="testimonial-card video-testimonial">
+            <div class="testimonial-media">
+              <video muted loop playsinline class="testimonial-video">
+                <source src="img/Testimonial Video 2.mp4" type="video/mp4">
+              </video>
+              <button class="video-control" aria-label="Unmute video"><i class="fas fa-volume-mute"></i></button>
+            </div>
+            <div class="testimonial-body">
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7351506035192250368/" target="_blank" rel="noopener noreferrer" class="verify-badge">
+                <i class="fab fa-linkedin"></i> View Post
+              </a>
+            </div>
+          </article>
+          <!-- Ten image testimonials -->
+          <article class="testimonial-card"><div class="testimonial-screenshot"><img src="/img/Testimonials 2.jpg" alt="LinkedIn testimonial" /></div><div class="testimonial-body"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7308381845509820416/" target="_blank" class="verify-badge"><i class="fab fa-linkedin"></i> View Post</a></div></article>
+          <article class="testimonial-card"><div class="testimonial-screenshot"><img src="/img/Testimonials 1.jpg" alt="LinkedIn testimonial" /></div><div class="testimonial-body"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7186242043831033856/" target="_blank" class="verify-badge"><i class="fab fa-linkedin"></i> View Post</a></div></article>
+          <article class="testimonial-card"><div class="testimonial-screenshot"><img src="/img/Testimonials 3.jpg" alt="LinkedIn testimonial" /></div><div class="testimonial-body"><a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_testimonial-remote-workfromanywhere-activity-7310556158153441280-_uDp" target="_blank" class="verify-badge"><i class="fab fa-linkedin"></i> View Post</a></div></article>
+          <article class="testimonial-card"><div class="testimonial-screenshot"><img src="/img/Testimonials 4.jpg" alt="LinkedIn testimonial" /></div><div class="testimonial-body"><a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_she-was-earning-1000-a-month-as-a-marketing-activity-7308019485758676993-H2-z" target="_blank" class="verify-badge"><i class="fab fa-linkedin"></i> View Post</a></div></article>
+          <article class="testimonial-card"><div class="testimonial-screenshot"><img src="/img/Testimonials 5.jpg" alt="LinkedIn testimonial" /></div><div class="testimonial-body"><a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_landing-a-remote-job-isnt-luckits-strategy-activity-7303670752497573888-aDdr" target="_blank" class="verify-badge"><i class="fab fa-linkedin"></i> View Post</a></div></article>
+          <article class="testimonial-card"><div class="testimonial-screenshot"><img src="/img/Testimonials 6.jpg" alt="LinkedIn testimonial" /></div><div class="testimonial-body"><a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_remote-workfromanywhere-remotwork-activity-7298597374162014209-YuO3" target="_blank" class="verify-badge"><i class="fab fa-linkedin"></i> View Post</a></div></article>
+          <article class="testimonial-card"><div class="testimonial-screenshot"><img src="/img/Testimonials 7.jpg" alt="LinkedIn testimonial" /></div><div class="testimonial-body"><a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_i-dont-think-people-understand-how-critical-activity-7288450516714463234-cUL2" target="_blank" class="verify-badge"><i class="fab fa-linkedin"></i> View Post</a></div></article>
+          <article class="testimonial-card"><div class="testimonial-screenshot"><img src="/img/Testimonials 8.jpg" alt="LinkedIn testimonial" /></div><div class="testimonial-body"><a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_remote-workfromhome-workfromanywhere-activity-7288088142123782145-bDp6" target="_blank" class="verify-badge"><i class="fab fa-linkedin"></i> View Post</a></div></article>
+          <article class="testimonial-card"><div class="testimonial-screenshot"><img src="/img/Testimonials 9.jpg" alt="LinkedIn testimonial" /></div><div class="testimonial-body"><a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_remote-workfromhome-workfromanywhere-activity-7283739416928358400-fJLY" target="_blank" class="verify-badge"><i class="fab fa-linkedin"></i> View Post</a></div></article>
+          <article class="testimonial-card"><div class="testimonial-screenshot"><img src="/img/Testimonials 10.jpg" alt="LinkedIn testimonial" /></div><div class="testimonial-body"><a href="https://www.linkedin.com/posts/brian-mwithi-resume-expert_testimmonial-remote-workfromanywhere-activity-7268134089604419584-h_L3" target="_blank" class="verify-badge"><i class="fab fa-linkedin"></i> View Post</a></div></article>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <!-- Footer -->
+  <footer class="footer" aria-label="Contact information">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-heading">Contact</h3>
+          <address>
+            <p><i class="fas fa-phone"></i> <a href="tel:+254720064950">+254720064950</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+          </address>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading"><i class="fas fa-map-marker-alt"></i> Location</h3>
+          <p><i class="fas fa-city"></i> Nairobi, Kenya</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Connect</h3>
+          <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+  <script src="about.js"></script>
 </body>
 </html>
