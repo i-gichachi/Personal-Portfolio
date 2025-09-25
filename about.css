@@ -410,16 +410,23 @@ main {
   background: linear-gradient(90deg, white, rgba(255, 255, 255, 0.7));
 }
 
-/* ================= Mobile-Specific Testimonial Styles ================= */
+/* ================= Mobile-Specific Styles ================= */
 @media (max-width: 768px) {
   main {
-    margin-top: 60px;
+    margin-top: 80px; /* Increased from 60px to create more space */
   }
   
-  .experience-section,
-  .education-section,
-  .testimonials-section {
-    padding: 40px 0;
+  .experience-section {
+    padding: 50px 0 40px; /* Increased top padding for better spacing */
+  }
+  
+  .experience-section .section-title {
+    margin-bottom: 25px; /* Added more space below the title */
+    padding-top: 10px; /* Extra padding at the top */
+  }
+  
+  .timeline {
+    margin: 20px auto 0; /* Adjusted margin */
   }
   
   .timeline::before {
@@ -436,7 +443,12 @@ main {
   .timeline-content {
     width: calc(100% - 56px);
     margin-left: 56px !important;
-    padding: 18px;
+    padding: 20px; /* Slightly increased padding for better readability */
+  }
+  
+  .education-section,
+  .testimonials-section {
+    padding: 40px 0;
   }
   
   .education-grid,
@@ -516,12 +528,24 @@ main {
 }
 
 @media (max-width: 640px) {
+  /* Enhanced mobile spacing */
   main {
-    margin-top: 50px;
+    margin-top: 80px; /* Consistent spacing */
+  }
+  
+  .experience-section {
+    padding: 40px 0 30px; /* Balanced padding */
+  }
+  
+  .experience-section .section-title {
+    margin-bottom: 20px;
+    padding-top: 5px;
+    font-size: clamp(1.6rem, 5vw, 2.2rem); /* Better mobile font sizing */
   }
   
   .timeline-item {
     flex-direction: column;
+    margin-bottom: 25px; /* Increased spacing between items */
   }
   
   .timeline::before {
@@ -533,18 +557,20 @@ main {
     left: auto;
     transform: none;
     margin-right: 0;
-    margin-bottom: 12px;
+    margin-bottom: 15px; /* More space below marker */
     align-self: flex-start;
   }
   
   .timeline-content {
     width: 100%;
     margin-left: 0 !important;
+    padding: 18px;
   }
   
   .job-header h3 {
     font-size: 1.2rem;
     min-width: 100%;
+    margin-bottom: 5px;
   }
   
   /* Mobile small screens */
@@ -558,14 +584,21 @@ main {
 }
 
 @media (max-width: 480px) {
+  /* Extra small mobile optimization */
   .experience-section,
   .education-section,
   .testimonials-section {
     padding: 30px 0;
   }
   
+  .experience-section .section-title {
+    margin-bottom: 15px;
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+  
   .timeline-content {
     padding: 16px;
+    margin-bottom: 5px;
   }
   
   .job-header {
@@ -583,13 +616,20 @@ main {
     border-radius: var(--radius);
   }
   
-  /* Extra small mobile */
+  /* Extra small mobile testimonial heights */
   .testimonial-card:not(.video-testimonial) .testimonial-media {
     height: 200px;
   }
   
   .testimonial-card.video-testimonial .testimonial-media {
     height: 220px;
+  }
+}
+
+/* Professional spacing for the first section on mobile */
+@media (max-width: 768px) {
+  .experience-section:first-child {
+    padding-top: 60px; /* Extra top padding for the first section */
   }
 }
 

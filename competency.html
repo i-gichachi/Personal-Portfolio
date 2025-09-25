@@ -1,186 +1,348 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Competencies | Software Developer Portfolio</title>
-    <meta name="description" content="Technical and professional competencies of Ian Gichachi, Full-Stack Developer">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="competency.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Competencies | Ian Gichachi - Portfolio Developer & Full-Stack Software Developer</title>
+  <meta name="description" content="Technical and professional competencies of Ian Gichachi, Full-Stack Developer" />
+  <meta name="theme-color" content="#041e64" />
+  <!-- Favicon / App Icons -->
+  <link rel="icon" href="/img/Logo.jpg" />
+  <link rel="apple-touch-icon" href="/img/Logo.jpg" />
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="competency.css" />
 </head>
 <body>
-    <!-- Video Background -->
-    <video autoplay muted loop id="videoBG" aria-hidden="true">
-        <source src="img/About video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+  <!-- Header -->
+  <header aria-label="Main navigation">
+    <nav class="navbar container">
+      <a href="/" class="logo" aria-label="Go to homepage">
+        <img src="/img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50" />
+      </a>
 
-    <!-- Consistent Header with Index Page -->
-    <header aria-label="Main navigation">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50">
-                </a>
-            </div>
-            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="about">About</a></li>
-                <li><a href="competency" aria-current="page">Competencies</a></li>
-                <li><a href="project">Projects</a></li>
-                <li><a href="services">Services</a></li>
-                <li><button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button></li>
-            </ul>
-        </nav>
-    </header>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
 
-    <main>
-        <!-- Competencies Section -->
-        <section class="competencies-section">
-            <div class="container">
-                <h1>Core Competencies</h1>
-                <div class="competencies-grid">
-                    <div class="competency-card">
-                        <div class="card-icon">💻</div>
-                        <h2>Full-Stack Development</h2>
-                        <div class="card-divider"></div>
-                        <p>I specialise in crafting secure and efficient applications, utilising both front-end and back-end technologies to deliver seamless user experiences. My expertise includes JavaScript frameworks and API integration, ensuring scalable and robust solutions for every project.</p>
-                    </div>
-                    
-                    <div class="competency-card">
-                        <div class="card-icon">📂</div>
-                        <h2>Portfolio Development</h2>
-                        <div class="card-divider"></div>
-                        <p>As an expert in creating tailored job-seeking portfolios, I've designed over 100 professional profiles using tools like Wix and strategic ChatGPT prompts. These portfolios have resulted in measurable client success, including a 30% increase in remote job placements.</p>
-                    </div>
-                    
-                    <div class="competency-card">
-                        <div class="card-icon">🤝</div>
-                        <h2>Stakeholder Collaboration</h2>
-                        <div class="card-divider"></div>
-                        <p>I excel at bridging technical and business requirements by facilitating clear and productive communication. My ability to collaborate across teams has consistently resulted in streamlined workflows, improved efficiency, and project success.</p>
-                    </div>
-                    
-                    <div class="competency-card">
-                        <div class="card-icon">🎨</div>
-                        <h2>UX/UI Design</h2>
-                        <div class="card-divider"></div>
-                        <p>I have a strong passion for delivering user-centred designs that drive engagement and satisfaction. My focus on optimising user interfaces has enhanced client projects, achieving improved metrics like a 50% increase in website engagement.</p>
-                    </div>
-                    
-                    <div class="competency-card">
-                        <div class="card-icon">🔍</div>
-                        <h2>SEO Optimisation</h2>
-                        <div class="card-divider"></div>
-                        <p>I leverage advanced SEO tools and strategies to enhance website visibility and brand identity. My projects have demonstrated tangible results, such as a 40% boost in online engagement for clients through tailored digital solutions.</p>
-                    </div>
-                    
-                    <div class="competency-card">
-                        <div class="card-icon">⚙️</div>
-                        <h2>Workflow Optimisation</h2>
-                        <div class="card-divider"></div>
-                        <p>I am skilled at identifying inefficiencies and implementing strategies that enhance productivity. By redesigning workflows, I've achieved up to a 20% reduction in turnaround times for complex projects, ensuring timely and quality deliverables.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/competency" aria-current="page">Competencies</a></li>
+        <li><a href="/project">Projects</a></li>
+        <li><a href="/services">Services</a></li>
+        <li>
+          <button type="button" class="download-btn" onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'">
+            Download CV
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Tools & Technologies Section -->
-        <section class="tools-section">
-            <div class="container">
-                <h1>Tools & Technologies</h1>
-                <div class="tools-grid">
-                    <div class="tool-card">
-                        <div class="tool-icon">🖥️</div>
-                        <h3>Wix</h3>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">🤖</div>
-                        <h3>ChatGPT</h3>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">📹</div>
-                        <h3>Google Meet</h3>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">💳</div>
-                        <h3>PayPal Integration</h3>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">🔎</div>
-                        <h3>SEO Tools</h3>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">📊</div>
-                        <h3>Microsoft Office</h3>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">⚛️</div>
-                        <h3>ReactJS</h3>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">📄</div>
-                        <h3>HTML5</h3>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">🎨</div>
-                        <h3>CSS3</h3>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">📦</div>
-                        <h3>ERP Systems</h3>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">🗃️</div>
-                        <h3>Database Tools</h3>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">🐙</div>
-                        <h3>GitHub</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+  <main id="main">
+    <!-- Competencies Section -->
+    <section class="competencies-section">
+      <div class="video-background">
+        <video autoplay muted loop playsinline id="competency-video" aria-hidden="true" poster="/img/video-poster.jpg">
+          <source src="/img/About video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-fallback"></div>
+      </div>
 
-    <!-- Footer -->
-    <footer class="footer" aria-label="Contact information">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3 class="footer-heading">Contact</h3>
-                    <address>
-                        <p>Telephone: <a href="tel:+254720064950">+254720064950</a></p>
-                        <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
-                    </address>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-heading">Location</h3>
-                    <p>Nairobi, Kenya</p>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-heading">Connect</h3>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Professional Competencies</h2>
+        
+        <div class="competencies-grid">
+          <!-- Full-Stack Development -->
+          <article class="competency-card">
+            <div class="competency-icon">
+              <i class="fas fa-code"></i>
             </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All rights reserved.</p>
+            <h3>Full-Stack Development</h3>
+            <p>I specialise in creating secure, scalable, and user-friendly applications, seamlessly integrating both front-end and back-end technologies. My experience includes developing projects with JavaScript frameworks, API integration, and cloud hosting solutions that ensure robust performance. For example, I led the design and delivery of a full-stack website for the GHC Foundation, which incorporated PayPal donation systems and SEO, resulting in a 40% increase in user engagement.</p>
+          </article>
+          
+          <!-- Portfolio Development -->
+          <article class="competency-card">
+            <div class="competency-icon">
+              <i class="fas fa-briefcase"></i>
             </div>
+            <h3>Portfolio Development</h3>
+            <p>As a dedicated expert in job-seeking portfolios, I have designed over 100 professional profiles using Wix, ReactJS, and strategic ChatGPT prompts. These tailored portfolios have directly contributed to a 30% increase in clients securing remote roles, with several portfolio users landing their dream positions. My approach focuses on combining personal branding with functional design to boost visibility and attractiveness to recruiters.</p>
+          </article>
+          
+          <!-- Stakeholder Collaboration -->
+          <article class="competency-card">
+            <div class="competency-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Stakeholder Collaboration</h3>
+            <p>I excel at bridging the gap between technical and business teams to ensure clear communication and alignment. In my role as Senior Portfolio & Software Developer at Careers Without Borders, I spearheaded collaboration efforts that resulted in a 25% increase in service demand and a 20% reduction in project turnaround times. This success was driven by using tools like Google Meet to facilitate cross-functional team coordination, ensuring efficiency in project execution.</p>
+          </article>
+          
+          <!-- UX/UI Design -->
+          <article class="competency-card">
+            <div class="competency-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3>UX/UI Design</h3>
+            <p>I have a strong passion for user-centred design, which enhances both engagement and user satisfaction. Through a combination of research-driven decisions and iterative design, I've improved user interface layouts, leading to a 50% increase in website engagement for clients. My focus on intuitive design has proven to elevate the user experience, transforming complex functionalities into simple, enjoyable interactions.</p>
+          </article>
+          
+          <!-- SEO Optimisation -->
+          <article class="competency-card">
+            <div class="competency-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3>SEO Optimisation</h3>
+            <p>My expertise in SEO optimisation has led to tangible improvements in online visibility and engagement. By employing advanced SEO tools and strategies, such as Google Analytics and custom-tailored keyword strategies, I have increased clients' online visibility, with one project showing a 40% boost in website engagement. I prioritise creating SEO-friendly websites that drive traffic and foster long-term growth.</p>
+          </article>
+          
+          <!-- Workflow Optimisation -->
+          <article class="competency-card">
+            <div class="competency-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Workflow Optimisation</h3>
+            <p>I am adept at identifying workflow inefficiencies and implementing solutions that enhance productivity. For instance, by redesigning portfolio development processes at Careers Without Borders, I improved team efficiency and reduced project turnaround time by 20%. My focus on continuous improvement and process automation ensures timely delivery without compromising quality.</p>
+          </article>
+          
+          <!-- Domain Management & Custom Domain Setup -->
+          <article class="competency-card">
+            <div class="competency-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Domain Management & Custom Domain Setup</h3>
+            <p>I have extensive experience in managing and configuring custom domains, ensuring seamless domain connectivity for my clients' websites. I've helped numerous clients purchase, connect, and manage their domains via platforms like GoDaddy, making sure their websites are fully operational with personalised, branded URLs. This expertise enhances both brand credibility and professional online presence.</p>
+          </article>
+          
+          <!-- Web Traffic Analytics & Reporting -->
+          <article class="competency-card">
+            <div class="competency-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Web Traffic Analytics & Reporting</h3>
+            <p>I integrate tools like Vercel Analytics and DeepSeek into my projects, enabling clients to monitor their website's performance and traffic. By embedding Vercel Analytics, I ensure that clients can track key metrics, such as user visits and engagement, empowering them with data-driven insights to refine their online strategies. This has helped several clients improve their marketing strategies and achieve measurable growth.</p>
+          </article>
+          
+          <!-- Website Security & Maintenance -->
+          <article class="competency-card">
+            <div class="competency-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Website Security & Maintenance</h3>
+            <p>I prioritise the security and maintenance of all websites I build, ensuring they are protected from potential vulnerabilities and perform optimally. I've used platforms like Gemini for secure hosting and regular security updates, as well as Vercel for automated deployment and maintenance, significantly reducing downtime. This proactive approach ensures clients' websites are always secure, up-to-date, and reliable.</p>
+          </article>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" aria-label="Back to top" title="Back to Top">
-        &#8679;
-    </button>
+    <!-- Tools & Technologies Section -->
+    <section class="tools-section">
+      <div class="container">
+        <h2 class="section-title">Tools & Technologies</h2>
+        
+        <div class="tools-categories">
+          <!-- Development Tools -->
+          <div class="tool-category">
+            <h3>Development & Frameworks</h3>
+            <div class="tools-grid">
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <h3>ReactJS</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <h3>HTML5</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3>CSS3</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fab fa-python"></i>
+                </div>
+                <h3>Python Flask</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <h3>Supabase</h3>
+              </article>
+            </div>
+          </div>
 
-    <script src="script.js"></script>
+          <!-- Platform & CMS Tools -->
+          <div class="tool-category">
+            <h3>Platforms & CMS</h3>
+            <div class="tools-grid">
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fab fa-wix"></i>
+                </div>
+                <h3>Wix</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Vercel</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <h3>GitHub</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fas fa-link"></i>
+                </div>
+                <h3>GoDaddy Domains</h3>
+              </article>
+            </div>
+          </div>
+
+          <!-- AI & Productivity Tools -->
+          <div class="tool-category">
+            <h3>AI & Productivity</h3>
+            <div class="tools-grid">
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <h3>ChatGPT</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <h3>DeepSeek</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fas fa-gem"></i>
+                </div>
+                <h3>Gemini</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fab fa-microsoft"></i>
+                </div>
+                <h3>Microsoft Office</h3>
+              </article>
+            </div>
+          </div>
+
+          <!-- Integration & Analytics Tools -->
+          <div class="tool-category">
+            <h3>Integration & Analytics</h3>
+            <div class="tools-grid">
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fab fa-paypal"></i>
+                </div>
+                <h3>PayPal Integration</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <h3>SEO Tools</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fab fa-google"></i>
+                </div>
+                <h3>Google Meet</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fas fa-server"></i>
+                </div>
+                <h3>Database Tools</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fas fa-cube"></i>
+                </div>
+                <h3>ERP Systems</h3>
+              </article>
+              
+              <article class="tool-card">
+                <div class="tool-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h3>Lovable</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Contact information">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-heading"></i> Contact</h3>
+          <address>
+            <p><i class="fas fa-phone"></i> <a href="tel:+254720064950">+254720064950</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+          </address>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading"><i class="fas fa-map-marker-alt"></i> Location</h3>
+          <p><i class="fas fa-city"></i> Nairobi, Kenya</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Connect</h3>
+          <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+  <script src="competency.js"></script>
 </body>
 </html>
