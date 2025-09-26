@@ -1,200 +1,450 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Software Developer Portfolio</title>
-    <meta name="description" content="Professional projects portfolio of Ian Gichachi, showcasing full-stack development work and case studies">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="project.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Ian Gichachi - Portfolio Developer & Full-Stack Software Developer</title>
+  <meta name="description" content="Professional project case studies of Ian Gichachi, showcasing full-stack development work and portfolio strategy" />
+  <meta name="theme-color" content="#041e64" />
+  <!-- Favicon / App Icons -->
+  <link rel="icon" href="/img/Logo.jpg" />
+  <link rel="apple-touch-icon" href="/img/Logo.jpg" />
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project.css" />
 </head>
 <body>
-    <!-- Video Background -->
-    <video autoplay muted loop id="videoBG" aria-hidden="true">
-        <source src="img/About video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+  <!-- Header -->
+  <header aria-label="Main navigation">
+    <nav class="navbar container">
+      <a href="/" class="logo" aria-label="Go to homepage">
+        <img src="/img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50" />
+      </a>
 
-    <!-- Consistent Header with Index Page -->
-    <header aria-label="Main navigation">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50">
-                </a>
-            </div>
-            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="about">About</a></li>
-                <li><a href="competency">Competencies</a></li>
-                <li><a href="project" aria-current="page">Projects</a></li>
-                <li><a href="services">Services</a></li>
-                <li><button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button></li>
-            </ul>
-        </nav>
-    </header>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
 
-    <main>
-        <!-- Projects Section -->
-        <section class="projects-section">
-            <div class="container">
-                <h1 class="section-title">Project Case Studies</h1>
-                <p class="section-subtitle">Detailed overviews of my professional work and contributions</p>
-                
-                <!-- Project 1 -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <h2 class="project-title">GHC Foundation Website</h2>
-                        <a href="https://www.theghcf.org/" target="_blank" class="project-link" rel="noopener noreferrer">
-                            <span>Live Demo</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 6H6V18H18V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M14 4H20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M21 3L12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                    
-                    <div class="project-image-container">
-                        <img src="img/GHC Foundation.png" alt="GHC Foundation Website Screenshot" class="project-image" loading="lazy">
-                    </div>
-                    
-                    <div class="project-content">
-                        <div class="project-overview">
-                            <h3 class="content-title">Project Overview</h3>
-                            <p>The Graced Hands of Compassion Foundation connects hearts across borders, uplifting vulnerable children, orphans, and the elderly in Kenya and the US. Through education, charity visits, and emotional support, they nurture hope and empower lives. Rooted in values aligned with Sustainable Development Goals, the foundation strives to end hunger and improve education. The website serves as a bridge, making it simple to donate, volunteer, and engage with their mission, fostering meaningful connections and positive change.</p>
-                        </div>
-                        
-                        <div class="project-details">
-                            <div class="detail-card">
-                                <h3 class="detail-title">Technologies Used</h3>
-                                <ul class="tech-list">
-                                    <li><span class="tech-pill">HTML5</span></li>
-                                    <li><span class="tech-pill">CSS3</span></li>
-                                    <li><span class="tech-pill">Python</span></li>
-                                    <li><span class="tech-pill">PayPal API</span></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="detail-card">
-                                <h3 class="detail-title">Key Features</h3>
-                                <ul class="feature-list">
-                                    <li>Fully responsive design, ensuring a seamless user experience across all devices</li>
-                                    <li>Intuitive navigation and clear call-to-action elements to drive user engagement</li>
-                                    <li>Accessibility-focused design to cater to diverse users</li>
-                                    <li>Secure payment integration for donations</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="detail-card">
-                                <h3 class="detail-title">Impact & Results</h3>
-                                <ul class="impact-list">
-                                    <li>Achieved a 40% increase in user engagement post-launch</li>
-                                    <li>Streamlined online donation processes, enhancing user convenience and satisfaction</li>
-                                    <li>Boosted the organisation's digital presence, increasing community involvement and support</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Project 2 -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <h2 class="project-title">Careers Without Borders Official Website</h2>
-                        <a href="https://www.prcresume.com/home" target="_blank" class="project-link" rel="noopener noreferrer">
-                            <span>Live Demo</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 6H6V18H18V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M14 4H20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M21 3L12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                    
-                    <div class="project-image-container">
-                        <img src="img/Careers Without Borders.png" alt="Careers Without Borders Website Screenshot" class="project-image" loading="lazy">
-                    </div>
-                    
-                    <div class="project-content">
-                        <div class="project-overview">
-                            <h3 class="content-title">Project Overview</h3>
-                            <p>The Careers Without Borders website is the official digital presence for a company dedicated to empowering professionals with exceptional resume services. The site provides an intuitive platform for users to explore offerings, learn about career resources, and engage seamlessly with the brand. Designed to enhance user experience and elevate the company's brand identity, the website reflects a commitment to quality, reliability, and innovation in career development.</p>
-                        </div>
-                        
-                        <div class="project-details">
-                            <div class="detail-card">
-                                <h3 class="detail-title">Technologies Used</h3>
-                                <ul class="tech-list">
-                                    <li><span class="tech-pill">HTML5</span></li>
-                                    <li><span class="tech-pill">CSS3</span></li>
-                                    <li><span class="tech-pill">Python</span></li>
-                                    <li><span class="tech-pill">Vercel</span></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="detail-card">
-                                <h3 class="detail-title">Key Features</h3>
-                                <ul class="feature-list">
-                                    <li>Responsive design optimised for all devices, delivering a consistent and professional appearance</li>
-                                    <li>Clean and intuitive interface, prioritising ease of navigation and accessibility</li>
-                                    <li>Strategic call-to-action elements to drive engagement and conversion</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="detail-card">
-                                <h3 class="detail-title">Impact & Results</h3>
-                                <ul class="impact-list">
-                                    <li>Launched the website to enhance brand identity and improve user experience</li>
-                                    <li>Updated and secured systems to optimise performance and ensure data integrity, reducing downtime by 25%</li>
-                                    <li>Strengthened the organisation's digital presence, driving greater customer trust and engagement</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/competency">Competencies</a></li>
+        <li><a href="/project" aria-current="page">Projects</a></li>
+        <li><a href="/services">Services</a></li>
+        <li>
+          <button type="button" class="download-btn" onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'">
+            Download CV
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Consistent Footer with Index Page -->
-    <footer class="footer" aria-label="Contact information">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3 class="footer-heading">Contact</h3>
-                    <address>
-                        <p>Telephone: <a href="tel:+254720064950">+254720064950</a></p>
-                        <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
-                    </address>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-heading">Location</h3>
-                    <p>Nairobi, Kenya</p>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-heading">Connect</h3>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All rights reserved.</p>
-            </div>
+  <main id="main">
+    <!-- Projects Section -->
+    <section class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Project Case Studies</h2>
+          <div class="section-divider"></div>
         </div>
-    </footer>
+        
+        <!-- Case Study 1: GHC Foundation Website -->
+        <article class="case-study">
+          <div class="case-study-header">
+            <div class="case-study-meta">
+              <span class="case-study-badge">Website Development</span>
+              <h3>GHC Foundation Website</h3>
+              <p class="case-study-role"><i class="fas fa-user-tie"></i> Full-Stack Developer</p>
+            </div>
+            <a href="https://www.theghcf.org/" target="_blank" class="case-study-link" rel="noopener noreferrer">
+              <span>Live Demo</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" aria-label="Back to top" title="Back to Top">
-        &#8679;
-    </button>
+          <div class="case-study-image">
+            <img src="/img/GHC Foundation.png" alt="GHC Foundation Website Screenshot" loading="lazy" />
+          </div>
 
-    <script src="script.js"></script>
+          <div class="case-study-content">
+            <div class="content-section">
+              <h4><i class="fas fa-project-diagram"></i> Project Overview</h4>
+              <p>The Graced Hands of Compassion (GHC) Foundation connects hearts across borders, uplifting vulnerable children, orphans, and the elderly in Kenya and the US. Through education, charity visits, and emotional support, the foundation nurtures hope and empowers lives, aligning its work with Sustainable Development Goals. The website was created as a bridge for global supporters, making it simple to donate, volunteer, and engage with their mission, fostering meaningful connections and positive change.</p>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-exclamation-triangle"></i> Challenges & Approach</h4>
+              <p>The site needed to be visually engaging, responsive, and capable of handling multiple donation channels securely while telling the foundation's story effectively. I contributed to the front-end using HTML, CSS, and JavaScript to create a dynamic, mobile-friendly interface, and implemented Python for backend content management and donation processing.</p>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-star"></i> Key Features & Achievements</h4>
+              <div class="features-grid">
+                <div class="feature-item">
+                  <i class="fas fa-donate"></i>
+                  <div>
+                    <h5>Multi-Channel Donations</h5>
+                    <p>Integrated M-Pesa, Zelle, Venmo, and Cash App to facilitate seamless contributions from supporters worldwide.</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-chart-line"></i>
+                  <div>
+                    <h5>Donation Goal Tracking</h5>
+                    <p>Developed real-time trackers to show fundraising progress, motivating continued engagement.</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-blog"></i>
+                  <div>
+                    <h5>Storytelling Through Blogs</h5>
+                    <p>Built a blog section sharing activities like orphanage visits and community projects, fostering transparency and connection.</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-analytics"></i>
+                  <div>
+                    <h5>Hosting & Analytics</h5>
+                    <p>Deployed on Vercel with custom domain management and integrated analytics to track performance and engagement.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-bullseye"></i> Impact</h4>
+              <p>The website improved donor engagement, simplified global donations, and elevated the foundation's online presence, converting casual visitors into active supporters and contributing to measurable growth in donations and visibility.</p>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-code"></i> Technologies Used</h4>
+              <div class="technologies-grid">
+                <div class="technology-item">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fas fa-cloud"></i>
+                  <span>Vercel</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fas fa-link"></i>
+                  <span>Custom Domain</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case Study 2: Careers Without Borders Website -->
+        <article class="case-study">
+          <div class="case-study-header">
+            <div class="case-study-meta">
+              <span class="case-study-badge">Website Development</span>
+              <h3>Careers Without Borders Website</h3>
+              <p class="case-study-role"><i class="fas fa-user-tie"></i> Full-Stack Developer</p>
+            </div>
+            <a href="https://www.prcresume.com/home" target="_blank" class="case-study-link" rel="noopener noreferrer">
+              <span>Live Demo</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="case-study-image">
+            <img src="/img/Careers Without Borders.png" alt="Careers Without Borders Website Screenshot" loading="lazy" />
+          </div>
+
+          <div class="case-study-content">
+            <div class="content-section">
+              <h4><i class="fas fa-project-diagram"></i> Project Overview</h4>
+              <p>The Careers Without Borders website is the official digital presence for a company dedicated to empowering professionals through exceptional resume services. The platform provides an intuitive space for users to explore offerings, learn about career resources, apply for remote jobs, and engage with the brand. Designed to enhance user experience and elevate the company's identity, the website reflects a commitment to quality, reliability, and innovation in career development.</p>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-exclamation-triangle"></i> Challenges & Approach</h4>
+              <p>The site had to manage complex functionality from job listings and applications to service bookings and payments, while maintaining seamless usability. I implemented ReactJS for a responsive front-end and Python for backend operations, ensuring smooth form handling, application processing, and secure transactions.</p>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-star"></i> Key Features & Achievements</h4>
+              <div class="features-grid">
+                <div class="feature-item">
+                  <i class="fas fa-briefcase"></i>
+                  <div>
+                    <h5>Remote Job Portal</h5>
+                    <p>Created a job board where users can browse and apply for remote opportunities easily.</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-calendar-check"></i>
+                  <div>
+                    <h5>Consultation & Service Booking</h5>
+                    <p>Developed a scheduling system for users to book consultations and services.</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-shield-alt"></i>
+                  <div>
+                    <h5>Secure Payment Integration</h5>
+                    <p>Integrated Paystack for secure payments, supporting M-Pesa, cards, and bank transfers.</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-analytics"></i>
+                  <div>
+                    <h5>Hosting & Analytics</h5>
+                    <p>Hosted on Vercel with analytics setup, providing real-time insights into traffic, engagement, and user behaviour.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-bullseye"></i> Impact</h4>
+              <p>The website streamlined job applications and client services, enhanced user experience, and strengthened brand credibility. It positioned Careers Without Borders as a trusted platform for remote job seekers and professional clients, increasing engagement, inquiries, and adoption of paid services.</p>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-code"></i> Technologies Used</h4>
+              <div class="technologies-grid">
+                <div class="technology-item">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fab fa-react"></i>
+                  <span>ReactJS</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fas fa-cloud"></i>
+                  <span>Vercel</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fas fa-link"></i>
+                  <span>Custom Domain</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fas fa-credit-card"></i>
+                  <span>Paystack</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case Study 3: Strategic Portfolio Redesign -->
+        <article class="case-study">
+          <div class="case-study-header">
+            <div class="case-study-meta">
+              <span class="case-study-badge">Portfolio Strategy</span>
+              <h3>Strategic Portfolio Redesign Delivers 50% Remote Job Placement Success</h3>
+              <p class="case-study-role"><i class="fas fa-user-tie"></i> Senior Portfolio & Software Developer</p>
+            </div>
+          </div>
+
+          <div class="case-study-content">
+            <div class="content-section">
+              <h4><i class="fas fa-chart-bar"></i> Executive Summary</h4>
+              <p>At Careers Without Borders, clients often struggled to translate their professional experience into compelling digital portfolios that could impress remote recruiters. I redesigned the portfolio development process, creating over 100 tailored, interactive job story timelines using Wix, ChatGPT, and supporting tools, optimising both layout and content generation. By integrating strategic prompts, structured client intake forms, and workflow automation, over 50% of clients secured remote positions, while the improved service also generated significant revenue for the company. This project demonstrates my ability to combine technical expertise, strategic thinking, and creative design to deliver tangible outcomes.</p>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-building"></i> Context and Challenge</h4>
+              <div class="context-grid">
+                <div class="context-item">
+                  <i class="fas fa-info-circle"></i>
+                  <div>
+                    <h5>Context</h5>
+                    <p>Careers Without Borders provides professional services to empower remote job seekers with high-quality CVs, portfolios, and career guidance. In my role as Senior Portfolio & Software Developer, I led the portfolio department, designing and delivering interactive portfolios that act as a professional story timeline, helping clients present their experience in a compelling way.</p>
+                  </div>
+                </div>
+                <div class="context-item">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <div>
+                    <h5>Challenge</h5>
+                    <p>Many clients were not converting interviews into job offers because their online portfolios lacked structure, strategic storytelling, and engaging visuals. The existing process was inefficient, with inconsistent layouts and repetitive manual content generation, which limited scalability and reduced overall client success rates.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-chess"></i> My Strategic Approach</h4>
+              <div class="approach-steps">
+                <div class="approach-step">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h5>Diagnosis and Strategy</h5>
+                    <p>Analysed existing portfolios and client outcomes to identify gaps in storytelling, layout design, and content workflow. This informed a comprehensive redesign plan to enhance clarity, engagement, and recruiter appeal.</p>
+                  </div>
+                </div>
+                <div class="approach-step">
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <h5>Execution and Collaboration</h5>
+                    <p>Leveraged Wix, HTML, CSS, JavaScript, Python, and ReactJS to build highly customisable portfolios. Created structured client intake forms, integrated Google Sheets to store and manage client data, and used ChatGPT for dynamic content generation.</p>
+                  </div>
+                </div>
+                <div class="approach-step">
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <h5>Optimisation and Impact Measurement</h5>
+                    <p>Refined prompts and portfolio layouts, monitored client success metrics, and iterated designs based on feedback, ensuring a consistently high standard and measurable improvement in job placement outcomes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-trophy"></i> Results and Impact</h4>
+              <div class="results-grid">
+                <div class="quantitative-results">
+                  <h5><i class="fas fa-chart-pie"></i> Quantifiable Outcomes</h5>
+                  <ul>
+                    <li>Designed and delivered over 100 professional portfolios for remote job seekers</li>
+                    <li>Achieved 50% remote job placement rate for clients using portfolios alongside CVs and coaching services</li>
+                    <li>Streamlined portfolio creation process, increasing workflow efficiency by 20%</li>
+                    <li>Contributed to significant revenue growth for Careers Without Borders through enhanced service offerings</li>
+                  </ul>
+                </div>
+                <div class="qualitative-results">
+                  <h5><i class="fas fa-star"></i> Qualitative Achievements</h5>
+                  <ul>
+                    <li>Enhanced client branding through visually compelling, interactive portfolio designs</li>
+                    <li>Improved recruiter engagement by presenting professional experience as clear job story timelines</li>
+                    <li>Increased team collaboration and efficiency through structured workflows and automation</li>
+                    <li>Strengthened the company's market positioning as a leading provider of remote career services</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-lightbulb"></i> Key Takeaway & Strategic Insight</h4>
+              <p>Designing portfolios that tell a compelling professional story not only increases remote job placement rates but also strengthens the client-company relationship. Structured workflows combined with creative content generation tools amplify both efficiency and impact, providing scalable value for remote career services.</p>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-flag-checkered"></i> Conclusion</h4>
+              <p>This project illustrates my ability to blend technical proficiency, strategic thinking, and design creativity to deliver measurable outcomes for clients and the business. By transforming portfolio development into a structured, high-impact service, I demonstrated both professional leadership and a results-driven approach essential for remote work success.</p>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-cogs"></i> Technical Proficiencies Utilised</h4>
+              <div class="technologies-grid">
+                <div class="technology-item">
+                  <i class="fab fa-wix"></i>
+                  <span>Wix</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fas fa-robot"></i>
+                  <span>ChatGPT</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fab fa-react"></i>
+                  <span>ReactJS</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fab fa-google"></i>
+                  <span>Google Sheets/Forms</span>
+                </div>
+                <div class="technology-item">
+                  <i class="fas fa-gem"></i>
+                  <span>Gemini</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-section">
+              <h4><i class="fas fa-brain"></i> Core Competencies Displayed</h4>
+              <div class="competencies-grid">
+                <div class="competency-item">
+                  <i class="fas fa-code"></i>
+                  <span>Full-Stack Development</span>
+                </div>
+                <div class="competency-item">
+                  <i class="fas fa-briefcase"></i>
+                  <span>Portfolio Development</span>
+                </div>
+                <div class="competency-item">
+                  <i class="fas fa-palette"></i>
+                  <span>UX/UI Design</span>
+                </div>
+                <div class="competency-item">
+                  <i class="fas fa-cogs"></i>
+                  <span>Workflow Optimisation</span>
+                </div>
+                <div class="competency-item">
+                  <i class="fas fa-handshake"></i>
+                  <span>Stakeholder Collaboration</span>
+                </div>
+                <div class="competency-item">
+                  <i class="fas fa-comments"></i>
+                  <span>Remote Communication & Project Management</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Contact information">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-heading"></i> Contact</h3>
+          <address>
+            <p><i class="fas fa-phone"></i> <a href="tel:+254720064950">+254720064950</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+          </address>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading"><i class="fas fa-map-marker-alt"></i> Location</h3>
+          <p><i class="fas fa-city"></i> Nairobi, Kenya</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Connect</h3>
+          <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+  <script src="project.js"></script>
+  <script src="analytics.js"></script>
 </body>
 </html>

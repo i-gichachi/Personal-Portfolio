@@ -1,232 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Services | Ian Gichachi Portfolio</title>
-    <meta name="description" content="Professional services offered by Ian Gichachi including portfolio creation, consulting, and full-stack development">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="services.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Professional Services | Ian Gichachi - Portfolio Developer & Full-Stack Engineer</title>
+  <meta name="description" content="Professional portfolio creation, consultation, and full-stack development services. Transform your career with custom solutions that get results." />
+  <meta name="theme-color" content="#041e64" />
+  <!-- Favicon / App Icons -->
+  <link rel="icon" href="img/Logo.jpg" />
+  <link rel="apple-touch-icon" href="img/Logo.jpg" />
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="services.css" />
 </head>
 <body>
-    <!-- Video Background -->
-    <video autoplay muted loop id="videoBG" aria-hidden="true">
-        <source src="img/About video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+  <!-- Header -->
+  <header aria-label="Main navigation">
+    <nav class="navbar container">
+      <a href="/" class="logo" aria-label="Go to homepage">
+        <img src="img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50" />
+      </a>
 
-    <!-- Consistent Header -->
-    <header aria-label="Main navigation">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/Logo.jpg" alt="Ian Gichachi Logo" class="logo-img" width="50" height="50">
-                </a>
-            </div>
-            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="about">About</a></li>
-                <li><a href="competency">Competencies</a></li>
-                <li><a href="project">Projects</a></li>
-                <li><a href="services" aria-current="page">Services</a></li>
-                <li><button onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'" type="button" class="download-btn">Download CV</button></li>
-            </ul>
-        </nav>
-    </header>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
 
-    <main>
-        <!-- Services Hero Section -->
-        <section class="services-hero" aria-labelledby="services-heading">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 id="services-heading">Professional Services</h1>
-                    <p class="subtitle">Tailored solutions to elevate your career or business</p>
-                    <p class="hero-description">With a proven track record of helping professionals secure their dream jobs, I offer specialized services designed to showcase your skills and experience effectively.</p>
-                </div>
-            </div>
-        </section>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="competency.html">Competencies</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li>
+          <button type="button" class="download-btn" onclick="location.href='Ian%20Gichachi%20CV.docx%20(1).pdf'">
+            Download CV
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Services Grid -->
-        <section class="services-grid-section" aria-labelledby="services-grid-heading">
-            <div class="container">
-                <h2 id="services-grid-heading" class="visually-hidden">Service Offerings</h2>
-                
-                <div class="services-grid">
-                    <!-- Service 1 -->
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M21.008 3a1 1 0 0 1 1 1v5.5a2.5 2.5 0 0 0 0 5V20a1 1 0 0 1-1 1H2.992a1 1 0 0 1-1-1v-5.5a2.5 2.5 0 0 0 0-5V4a1 1 0 0 1 1-1h18.016ZM19 5H4v2.968l.154.013a4.5 4.5 0 0 1 4.285 3.135l.303.812.53-1.61a2.5 2.5 0 0 1 4.74-.123l.401 1.203.44-1.323a4.5 4.5 0 0 1 4.265-2.993L19 7.97V5Zm0 14v-2.03l-.154-.013a4.5 4.5 0 0 1-4.285-3.135l-.303-.812-.53 1.61a2.5 2.5 0 0 1-4.74.123l-.401-1.203-.44 1.323a4.5 4.5 0 0 1-4.265 2.993L4 16.03V19h15Z"/>
-                            </svg>
-                        </div>
-                        <h3>Portfolio Creation & Design</h3>
-                        <div class="service-details">
-                            <p>Professional, custom-designed portfolios that showcase your skills and experience in the best light to potential employers.</p>
-                            <ul class="service-features">
-                                <li>Custom design tailored to your industry</li>
-                                <li>Mobile-optimized responsive layout</li>
-                                <li>SEO optimization for better visibility</li>
-                                <li>Integration with LinkedIn and other profiles</li>
-                            </ul>
-                        </div>
-                        <!--<div class="service-pricing">
-                            <span class="price">From $299</span>
-                            <span class="duration">(3-5 business days)</span>
-                        </div> -->
-                        <a href="mailto:iangichachi@gmail.com?subject=Portfolio%20Creation%20Inquiry&body=Hello%20Ian,%20I'm%20interested%20in%20your%20Portfolio%20Creation%20service.%20Please%20send%20me%20more%20details." class="service-cta">
-                            Get Started
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <!-- Service 2 -->
-                    <div class="service-card highlighted">
-                        <div class="service-badge">Most Popular</div>
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M4 22a8 8 0 1 1 16 0h-2a6 6 0 1 0-12 0H4Zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6Zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4Z"/>
-                            </svg>
-                        </div>
-                        <h3>Portfolio Consultation</h3>
-                        <div class="service-details">
-                            <p>Expert review and optimization of your existing portfolio with actionable recommendations to improve its effectiveness.</p>
-                            <ul class="service-features">
-                                <li>Comprehensive portfolio audit</li>
-                                <li>Personalized improvement roadmap</li>
-                                <li>ATS optimization strategies</li>
-                                <li>30-minute follow-up consultation</li>
-                            </ul>
-                        </div>
-                        <!--<div class="service-pricing">
-                            <span class="price">$199</span>
-                            <span class="duration">(2-3 business days)</span>
-                        </div> -->
-                        <a href="mailto:iangichachi@gmail.com?subject=Portfolio%20Consultation%20Inquiry&body=Hello%20Ian,%20I'm%20interested%20in%20your%20Portfolio%20Consultation%20service.%20Please%20send%20me%20more%20details." class="service-cta">
-                            Get Started
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <!-- Service 3 -->
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M15 4H5v16h14V8h-4V4ZM3 2.992C3 2.444 3.447 2 3.999 2H16l5 5v13.993A1 1 0 0 1 20.007 22H3.993A1 1 0 0 1 3 21.008V2.992ZM12 11.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM7.5 14a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0Z"/>
-                            </svg>
-                        </div>
-                        <h3>Front-End Development</h3>
-                        <div class="service-details">
-                            <p>Custom front-end development services to build responsive, accessible, and high-performance websites and applications.</p>
-                            <ul class="service-features">
-                                <li>HTML5, CSS3, JavaScript development</li>
-                                <li>React/Vue.js frameworks</li>
-                                <li>Mobile-first responsive design</li>
-                                <li>Performance optimization</li>
-                            </ul>
-                        </div>
-                        <!--<div class="service-pricing">
-                            <span class="price">From $999</span>
-                            <span class="duration">(Project-based)</span>
-                        </div> -->
-                        <a href="mailto:iangichachi@gmail.com?subject=Front-End%20Development%20Inquiry&body=Hello%20Ian,%20I'm%20interested%20in%20your%20Front-End%20Development%20service.%20Please%20send%20me%20more%20details." class="service-cta">
-                            Get Started
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <!-- Service 4 -->
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20 3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16Zm-1 2H5v14h14V5ZM8 7h3v2H8V7Zm0 4h3v2H8v-2Zm0 4h3v2H8v-2Zm5-8h3v2h-3V7Zm0 4h3v2h-3v-2Zm0 4h3v2h-3v-2Z"/>
-                            </svg>
-                        </div>
-                        <h3>Full-Stack Development</h3>
-                        <div class="service-details">
-                            <p>End-to-end web application development with both front-end and back-end implementation for complete solutions.</p>
-                            <ul class="service-features">
-                                <li>Custom web application development</li>
-                                <li>Database design and implementation</li>
-                                <li>API development and integration</li>
-                                <li>Deployment and maintenance</li>
-                            </ul>
-                        </div>
-                        <!--<div class="service-pricing">
-                            <span class="price">From $2,499</span>
-                            <span class="duration">(Project-based)</span>
-                        </div> -->
-                        <a href="mailto:iangichachi@gmail.com?subject=Full-Stack%20Development%20Inquiry&body=Hello%20Ian,%20I'm%20interested%20in%20your%20Full-Stack%20Development%20service.%20Please%20send%20me%20more%20details." class="service-cta">
-                            Get Started
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="services-cta">
-            <div class="container">
-                <h2>Ready to Elevate Your Professional Presence?</h2>
-                <p>Whether you're looking for a complete portfolio makeover or expert development services, I'm here to help you achieve your goals.</p>
-                <div class="cta-buttons">
-                    <a href="mailto:iangichachi@gmail.com?subject=Service%20Inquiry&body=Hello%20Ian,%20I'd%20like%20to%20discuss%20your%20services.%20Please%20contact%20me%20with%20more%20information." class="primary-cta">
-                        Contact Me Now
-                    </a>
-                    <a href="project" class="secondary-cta">
-                        View My Work
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Consistent Footer -->
-    <footer class="footer" aria-label="Contact information">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3 class="footer-heading">Contact</h3>
-                    <address>
-                        <p>Telephone: <a href="tel:+254720064950">+254720064950</a></p>
-                        <p>Email: <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
-                    </address>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-heading">Location</h3>
-                    <p>Nairobi, Kenya</p>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-heading">Connect</h3>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All rights reserved.</p>
-            </div>
+  <main id="main">
+    <!-- Services Section -->
+    <section class="services-section">
+      <div class="container">
+        <div class="services-title-container">
+          <h1>Professional Services</h1>
         </div>
-    </footer>
+        
+        <div class="services-grid">
+          <!-- Portfolio Creation -->
+          <article class="service-card">
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3>Portfolio Creation & Design</h3>
+            </div>
+            <div class="service-content">
+              <p class="service-summary">Transform your professional story into a visually compelling, recruiter-ready portfolio that opens doors to remote opportunities.</p>
+              <ul class="service-features">
+                <li>Custom design tailored to your industry and career goals</li>
+                <li>Interactive, mobile-optimised responsive layout</li>
+                <li>SEO optimisation to increase visibility</li>
+                <li>Integration with LinkedIn and professional profiles</li>
+                <li>Actionable career insights embedded in your portfolio</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <a href="mailto:iangichachi@gmail.com?subject=Portfolio%20Creation%20Inquiry&body=Hello%20Ian,%20I'm%20interested%20in%20your%20Portfolio%20Creation%20service.%20Please%20send%20me%20more%20details." class="service-cta-btn">
+                Get Started
+              </a>
+            </div>
+          </article>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" aria-label="Back to top" title="Back to Top">
-        &#8679;
-    </button>
+          <!-- Portfolio Consultation -->
+          <article class="service-card highlighted">
+            <div class="service-badge">Most Popular</div>
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <h3>Portfolio Consultation</h3>
+            </div>
+            <div class="service-content">
+              <p class="service-summary">Maximise the impact of your existing portfolio with expert evaluation and actionable improvements that drive results.</p>
+              <ul class="service-features">
+                <li>Comprehensive portfolio audit identifying strengths and gaps</li>
+                <li>Personalised improvement roadmap aligned with industry expectations</li>
+                <li>ATS optimisation strategies to increase interview invites</li>
+                <li>30-minute follow-up consultation to refine improvements</li>
+                <li>Guidance on leveraging portfolio with CV and LinkedIn</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <a href="https://calendly.com/iangichachi/30min" class="service-cta-btn primary">
+                Book Consultation
+              </a>
+            </div>
+          </article>
 
-    <script src="script.js"></script>
+          <!-- Front-End Development -->
+          <article class="service-card">
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Front-End Development</h3>
+            </div>
+            <div class="service-content">
+              <p class="service-summary">Build modern, high-performance, and responsive front-end solutions that engage users and elevate your brand online.</p>
+              <ul class="service-features">
+                <li>HTML5, CSS3, and JavaScript development</li>
+                <li>React.js or Vue.js frameworks for scalable applications</li>
+                <li>Mobile-first, fully responsive design</li>
+                <li>Performance optimisation for fast load times</li>
+                <li>UX/UI enhancements to increase user engagement</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <a href="mailto:iangichachi@gmail.com?subject=Front-End%20Development%20Inquiry&body=Hello%20Ian,%20I'm%20interested%20in%20your%20Front-End%20Development%20service.%20Please%20send%20me%20more%20details." class="service-cta-btn">
+                Get Started
+              </a>
+            </div>
+          </article>
+
+          <!-- Full-Stack Development -->
+          <article class="service-card">
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <h3>Full-Stack Development</h3>
+            </div>
+            <div class="service-content">
+              <p class="service-summary">Deliver complete end-to-end web solutions that combine robust back-end functionality with intuitive front-end experiences.</p>
+              <ul class="service-features">
+                <li>Custom web application development</li>
+                <li>Database design and implementation</li>
+                <li>API development and integration</li>
+                <li>Deployment, monitoring, and maintenance</li>
+                <li>Scalable architecture for growth and performance</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <a href="mailto:iangichachi@gmail.com?subject=Full-Stack%20Development%20Inquiry&body=Hello%20Ian,%20I'm%20interested%20in%20your%20Full-Stack%20Development%20service.%20Please%20send%20me%20more%20details." class="service-cta-btn">
+                Get Started
+              </a>
+            </div>
+          </article>
+
+          <!-- Portfolio Analytics -->
+          <article class="service-card">
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Portfolio Analytics & Insights</h3>
+            </div>
+            <div class="service-content">
+              <p class="service-summary">Gain actionable intelligence on your portfolio's performance to continuously improve visibility and recruiter engagement.</p>
+              <ul class="service-features">
+                <li>Track recruiter interactions and page visits</li>
+                <li>Identify top-performing sections</li>
+                <li>Data-driven insights for portfolio refinement</li>
+                <li>Real-time engagement analytics</li>
+                <li>Performance benchmarking reports</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <a href="mailto:iangichachi@gmail.com?subject=Portfolio%20Analytics%20Inquiry&body=Hello%20Ian,%20I'm%20interested%20in%20your%20Portfolio%20Analytics%20service.%20Please%20send%20me%20more%20details." class="service-cta-btn">
+                Get Started
+              </a>
+            </div>
+          </article>
+
+          <!-- Career Coaching -->
+          <article class="service-card">
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3>Career Coaching Integration</h3>
+            </div>
+            <div class="service-content">
+              <p class="service-summary">Combine your portfolio with professional career guidance and remote application strategies to maximise success.</p>
+              <ul class="service-features">
+                <li>Align portfolio with CV and LinkedIn</li>
+                <li>Coaching on presentation and storytelling</li>
+                <li>Strategic positioning for remote roles</li>
+                <li>Recruiter communication strategies</li>
+                <li>Interview preparation and follow-up guidance</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <a href="https://calendly.com/iangichachi/30min" class="service-cta-btn primary">
+                Book Coaching
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="services-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Transform Your Professional Presence?</h2>
+          <p>Whether you're looking for a complete portfolio makeover or expert development services, I'm here to help you achieve outstanding results.</p>
+          <div class="cta-buttons">
+            <a href="https://calendly.com/iangichachi/30min" class="btn btn-primary">
+              Book a Meeting
+            </a>
+            <a href="project.html" class="btn btn-ghost">
+              View My Work
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Contact information">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-heading"><i class="fas fa-envelope"></i> Contact</h3>
+          <address>
+            <p><i class="fas fa-phone"></i> <a href="tel:+254720064950">+254720064950</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:iangichachi@gmail.com">iangichachi@gmail.com</a></p>
+          </address>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading"><i class="fas fa-map-marker-alt"></i> Location</h3>
+          <p><i class="fas fa-city"></i> Nairobi, Kenya</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Connect</h3>
+          <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ian-gichachi-b0890a23b/" target="_blank" rel="noopener noreferrer">Ian Gichachi</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; <span id="current-year"></span> Gichachi Ian Mwaura. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+  <script src="services.js"></script>
+  <script src="analytics.js"></script>
 </body>
 </html>
